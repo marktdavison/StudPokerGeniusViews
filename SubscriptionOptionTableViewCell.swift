@@ -16,6 +16,10 @@ class SubscriptionOptionTableViewCell: UITableViewCell {
     @IBOutlet var priceLabel: UILabel!
     @IBOutlet var yourPlanLabel: UILabel!
     
+    
+    
+    @IBOutlet weak var detailedDescription: UITextView!
+    
     var isCurrentPlan: Bool = false {
         didSet {
   //          yourPlanLabel.isHidden = !isCurrentPlan
@@ -28,7 +32,7 @@ class SubscriptionOptionTableViewCell: UITableViewCell {
         let view = UIView()
         view.backgroundColor = #colorLiteral(red: 0.1369239688, green: 0.1614148617, blue: 0.1697000265, alpha: 1)
         selectedBackgroundView = view
-        yourPlanLabel.isHidden = true
+        yourPlanLabel.isHidden = false
         
     }
 
@@ -40,7 +44,7 @@ class SubscriptionOptionTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        yourPlanLabel.isHidden = true
+        yourPlanLabel.isHidden = false
     }
 
 }

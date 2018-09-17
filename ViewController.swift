@@ -1983,12 +1983,12 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         
         h.odds.pairRealOdds[index] = oddArr[7]
         let flushPlusRun = h.odds.flushRealOdds[index] + h.odds.runRealOdds[index]
-        if oddArr[8] - flushPlusRun < 0 {
+      //  if oddArr[8] - flushPlusRun < 0 {
             h.odds.highRealOdds[index] = oddArr[8]
-        } else {
-            h.odds.highRealOdds[index] = oddArr[8] - flushPlusRun
+  //      } else {
+  //          h.odds.highRealOdds[index] = oddArr[8] - flushPlusRun
             
-        }
+  //      }
 
      //   h.odds.highRealOdds[index] = oddArr[8]
         
