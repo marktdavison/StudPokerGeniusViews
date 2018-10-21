@@ -333,6 +333,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     var cardImage3: UIImageView!
     var cardImage4: UIImageView!
     var cardImage5: UIImageView!
+    var chosenFontSize: CGFloat = 9
+    var maxFontSize = CGFloat()
     
     public var nextCard: Int = 1
     
@@ -383,7 +385,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             o.numberOfLines = 3
             o.textAlignment = NSTextAlignment.left
             o.text = "Some options"
-            o.font = UIFont(name: "Helvetica", size: 7)
+            o.font = UIFont(name: "Rockwell", size: chosenFontSize)
             self.view.insertSubview(o, belowSubview: self.view)
          //   self.view.addSubview(o)
            // self.view.sendSubview(toBack: o)
@@ -396,7 +398,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             act.alpha = 1
             act.textAlignment = NSTextAlignment.left
             act.text = "actual stuff"
-            act.font = UIFont(name: "Helvetica", size: 7)
+            act.font = UIFont(name: "Rockwell", size: chosenFontSize)
             self.view.addSubview(act)
             playerLabels.append(act)
             game.mainScreenOddsLabels.append(act)
@@ -406,7 +408,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
       //      b.backgroundColor = UIColor.cyan
             b.textColor = UIColor.white
             b.textAlignment = NSTextAlignment.left
-            b.font = UIFont(name: "Helvetica", size: 11)
+            b.font = UIFont(name: "Rockwell", size: chosenFontSize + 4)
             b.text = "Bestest stuff"
             self.view.addSubview(b)
             playerLabels.append(b)
