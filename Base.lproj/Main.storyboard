@@ -2693,7 +2693,7 @@
                                                     <color key="textColor" red="1" green="0.73699768700000001" blue="0.039749005779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="hivig" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="41r-8a-Gfr">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please Wait..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="41r-8a-Gfr">
                                                     <rect key="frame" x="10" y="41" width="318" height="126"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

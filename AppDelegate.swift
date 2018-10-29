@@ -73,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
  */
         let uuid = UIDevice.current.identifierForVendor?.uuidString
         print("AppDel: uuid = \(String(describing: uuid))")
-        let query = PFQuery(className: "BackGround")
+        let query = PFQuery(className: "BackGround2")
         query.whereKey("uuid", equalTo: uuid!)
         //   query.whereKey("uuid", equalTo: "A0DC5487-7FAB-4602-B61F-B48EACBE45BA")
    //     userInfo = UserInfo()
