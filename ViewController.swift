@@ -83,32 +83,41 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     internal func didSelectMenuItem(withTitle title: String, index: Int) {
         print("In didSelectMenuItem of ViewController \(title)")
         if title == "Settings" {
+            game.userInfo.incMenuSettings()
             performSegue(withIdentifier: "prefSeque", sender: self)
         }
         if title == "Deck" {
+            game.userInfo.incMenuDeck()
             performSegue(withIdentifier: "deckSeque", sender: self)
         }
         if title == "Calculator" {
+            game.userInfo.incMenuCalc()
             performSegue(withIdentifier: "ffSeque", sender: self)
         }
         if title == "Replace Card" {
+            game.userInfo.incMenuReplace()
             performSegue(withIdentifier: "insertSeque", sender: self)
         }
         if title == "Favourites" {
+            game.userInfo.incMenuFavourites()
             print("Faves: In Favourites sidemenu handler")
 
             performSegue(withIdentifier: "favouritesSeque", sender: self)
         }
         if title == "About" {
+            game.userInfo.incMenuAbout()
             performSegue(withIdentifier: "aboutSeque", sender: self)
         }
         if title == "Abort Game" {
+            game.userInfo.incMenuAbort()
             clearUp()
         } 
         if title == "System" {
+            game.userInfo.incMenuSystem()
             performSegue(withIdentifier: "sysinfoSeque", sender: self)
         }
         if title == "Subscriptions" {
+            game.userInfo.incMenuSubscriptions()
             performSegue(withIdentifier: "subSeque", sender: self)
         }
     }
@@ -2128,6 +2137,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     
     
     @objc func swipedRight(gesture: UIGestureRecognizer) {
+        game.userInfo.incCardSwipeRight()
         let swipedthing = gesture.view!
         print("swiped right \(swipedthing)")
         for a in activeCards {
@@ -2146,6 +2156,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     }
 
     @objc func swipedLeft(gesture: UIGestureRecognizer) {
+        game.userInfo.incCardSwipeLeft()
         let swipedthing = gesture.view!
         print("swiped left \(swipedthing)")
         for a in activeCards {

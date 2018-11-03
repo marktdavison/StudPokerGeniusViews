@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -1206,6 +1206,7 @@
                         <outlet property="playerNoOutlet" destination="msA-uy-j5T" id="Yqf-oe-NkT"/>
                         <outlet property="playerSliderOutlet" destination="FSd-Qm-bta" id="vcn-TR-XX1"/>
                         <segue destination="Bfn-JV-6W7" kind="presentation" identifier="namesSequeFromPrefs" id="krQ-0x-dBi"/>
+                        <segue destination="fCz-78-fyo" kind="presentation" identifier="prefToSubSeque" id="h4P-xN-Snv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgb-Lm-4wX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2124,12 +2125,13 @@
                     <connections>
                         <outlet property="favouritesTable" destination="l4H-fx-SUT" id="JtP-3R-R3f"/>
                         <outlet property="outletLoad" destination="wjR-lH-ViZ" id="2Ob-Dn-xof"/>
+                        <segue destination="fCz-78-fyo" kind="presentation" identifier="favToSubSeque" id="hmA-Hk-SQG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdZ-8Y-sQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gdc-kz-28H" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1320.8" y="-890.39408866995075"/>
+            <point key="canvasLocation" x="1428" y="-129"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -2342,7 +2344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912.79999999999995" y="-21.428571428571431"/>
+            <point key="canvasLocation" x="282" y="-41"/>
         </scene>
         <!--Free Form View Controller-->
         <scene sceneID="V1F-5u-7l8">
@@ -2745,7 +2747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sc0-qo-9Up" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685.60000000000002" y="-2809.3596059113302"/>
+            <point key="canvasLocation" x="1428" y="749"/>
         </scene>
         <!--AboutVC View Controller-->
         <scene sceneID="8St-XN-sxV">
@@ -3350,7 +3352,7 @@ CgoKCgoKCgo
                             <constraint firstAttribute="trailing" secondItem="hf6-vA-CSv" secondAttribute="trailing" constant="10" id="0ok-uz-oCy"/>
                             <constraint firstAttribute="trailing" secondItem="GfD-IJ-5mR" secondAttribute="trailing" id="280-Le-jCL"/>
                             <constraint firstAttribute="bottom" secondItem="6Pv-kt-uUw" secondAttribute="bottom" constant="30" id="6yr-9i-v4Y"/>
-                            <constraint firstItem="6Pv-kt-uUw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Onl-8S-yFL" secondAttribute="trailing" symbolic="YES" id="83u-0f-lpv"/>
+                            <constraint firstItem="6Pv-kt-uUw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Onl-8S-yFL" secondAttribute="trailing" constant="8" symbolic="YES" id="83u-0f-lpv"/>
                             <constraint firstAttribute="trailing" secondItem="6Pv-kt-uUw" secondAttribute="trailing" constant="63" id="9Hd-ry-uv1"/>
                             <constraint firstItem="hf6-vA-CSv" firstAttribute="leading" secondItem="xsx-SG-A41" secondAttribute="leading" constant="10" id="DA2-bK-zpT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CZU-6c-kSB" secondAttribute="trailing" constant="10" id="DmR-Zt-Ff9"/>
@@ -3393,12 +3395,13 @@ CgoKCgoKCgo
                         <outlet property="gridView" destination="Qsx-BZ-cqE" id="zGX-jh-mVI"/>
                         <outlet property="playerNo" destination="8pY-Ba-WFV" id="Oh1-7h-yD4"/>
                         <outlet property="playerStepper" destination="vv9-RF-R5f" id="3lY-ji-TcG"/>
+                        <segue destination="fCz-78-fyo" kind="presentation" identifier="insertToSubSeque" id="5uF-Ui-FYS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGo-w5-Mmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Rt3-Ze-IsN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3488.8000000000002" y="-276.35467980295567"/>
+            <point key="canvasLocation" x="3359" y="-469"/>
         </scene>
         <!--Odds View Controller-->
         <scene sceneID="lvL-2f-bdf">
@@ -3885,11 +3888,12 @@ CgoKCgoKCgo
                         <outlet property="twoPair4Odds" destination="Y0v-rr-Zoh" id="3aw-mZ-F2r"/>
                         <outlet property="twopair5Odds" destination="R5z-1r-SF0" id="P9A-vA-6nf"/>
                         <outlet property="twopair6Odds" destination="w4W-3p-0VU" id="Tjm-aC-Vz2"/>
+                        <segue destination="fCz-78-fyo" kind="presentation" identifier="oddsToSubSeque" id="cLg-ug-7Yf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vso-q3-2ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1788.8" y="677.95566502463055"/>
+            <point key="canvasLocation" x="-91" y="461"/>
         </scene>
     </scenes>
     <resources>
@@ -3910,6 +3914,7 @@ CgoKCgoKCgo
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SBE-va-snC"/>
+        <segue reference="hmA-Hk-SQG"/>
         <segue reference="Z1h-uR-PkA"/>
         <segue reference="4id-4k-pvM"/>
     </inferredMetricsTieBreakers>

@@ -82,9 +82,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             if error != nil {
                 self.userInfo.createUserInfoObject()
-                print("AppDel: error = \(String(describing: error)) - first time through")
+                print("AppDel: error = \(String(describing: error)) - ParseDB first time through - creating user info object")
             } else if let dbRecord = loadedObject {
                 self.userInfo.loadUserInfoFromDB(bgObject: dbRecord)
+                print("ParseDB - loading object")
+
             }
         game.userInfo = self.userInfo
         //never delete this next line
