@@ -20,6 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var userInfo = UserInfo()
     
     
+//    enum SubscriptionType: Int {
+//        case autoRenewable = 0,
+//        nonRenewing = 1
+//    }
+//
+//    enum PurchaseType: Int {
+//        case simple = 0,
+//        autoRenewing,
+//        nonRenewing
+//    }
 
     
     
@@ -41,10 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
             }
-
-        
-
-        
         print("AppDel: setting up Parse Client Config")
         let config = ParseClientConfiguration { (po7csConfig) in
             po7csConfig.applicationId = "pokerodds"
@@ -55,22 +61,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Parse.initialize(with: config)
         
-    /*    let networkInfo = CTTelephonyNetworkInfo()
-        guard let info = networkInfo.subscriberCellularProvider else {return false}
-        if let carrier = info.isoCountryCode {
-            print("AppDel: Carrier is \(carrier)")
-        } */
-        // check if there is a stored record of type Background
-        // should ultimately be many of these
-        // but is there one with uuid - unique for the user/my apps?
- 
-        
-        /* need to think about this
+        /*
          first bring the memory object into being
          determine whether it already is stored in the DB - checkExists
          if not, create a new DB object and save it - createInDB
          otherwise load the old one in and do some update - LoadFromDB
- */
+         */
         let uuid = UIDevice.current.identifierForVendor?.uuidString
         print("AppDel: uuid = \(String(describing: uuid))")
         let query = PFQuery(className: "BackGround2")
@@ -88,7 +84,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("ParseDB - loading object")
 
             }
-        game.userInfo = self.userInfo
+            game.userInfo = self.userInfo
+
+            print("AppD: game.userinfo.subscriptionEnd \(game.userInfo.subscriptionEnd)")
+            print("AppD: game.userinfo.subscriptionEnd \(Date())")
+            print("currentSubscriber = \(game.currentSubscriber)")
+            if /*game.userInfo.subscriptionEnd == ""  || */ game.userInfo.subscriptionEnd > Date()  {
+                game.currentSubscriber = true
+            }
         //never delete this next line
         // parse-dashboard --appId pokerodds --masterKey DeckOfCards@18 --serverURL "http://pokeroddsserver.herokuapp.com/parse"
         print("AppDel: Ending!")
@@ -185,6 +188,88 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    
+
+    
+//    func verifySubscription(with Id: String, sharedSecret: String, type: SubscriptionType , validDuration: TimeInterval? = nil) {
+//        print("AD Subs: VS--- A")
+//        let appleValidator = AppleReceiptValidator(service: .production, sharedSecret: sharedSecret)
+//        print("AD Subs: VS--- B")
+//
+//        SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
+//            switch result {
+//
+//            case .success(let receipt):
+//                print("AD Subs: VS--- C2")
+//
+//                switch type {
+//
+//                case .autoRenewable:
+//                    print(" AD Subs: VS--- D1")
+//
+//                    let purchaseResult = SwiftyStoreKit.verifySubscription(
+//                        ofType: .autoRenewable,
+//                        productId: Id,
+//                        inReceipt: receipt)
+//                    print("AD Subs: VS--- D2")
+//
+//                    switch purchaseResult {
+//                    case .purchased(let expiryDate):
+//                        print("AD Subs: VS--- D2.1: Great News! \(Id) is valid until \(expiryDate)")
+//                        game.verificationResults[0] = "Great News! You are on this plan until \(expiryDate)"
+//                        game.currentSubscriber = true
+//                    case .expired(let expiryDate):
+//                        print("AD Subs: VS--- D2.1: Oh dear! \(Id) is expired since \(expiryDate)")
+//                        game.verificationResults[0] = "Oh dear! Your subscription expired on \(expiryDate)"
+//
+//                    case .notPurchased:
+//                        print("AD Subs: VS--- D2.1: Oh dear! The user has never purchased \(Id)")
+//                        game.verificationResults[0] = "The user has never purchased this subscription"
+//
+//                    }
+//
+//                    print("AD Subs: VS--- D3")
+//
+//                case .nonRenewing:
+//                    print("AD Subs: VS--- E1")
+//
+//                    guard let validDuration = validDuration else {return}
+//                    print("AD Subs: VS--- E2")
+//
+//                    let purchaseResult = SwiftyStoreKit.verifySubscription(
+//                        ofType: .nonRenewing(validDuration: validDuration),
+//                        productId: Id,
+//                        inReceipt: receipt)
+//                    print("AD Subs: VS--- E3")
+//
+//                    switch purchaseResult {
+//                    case .purchased(let expiryDate):
+//                        print("AD Subs: VS--- E3.1: Great News! \(Id) is valid until \(expiryDate)")
+//                        game.verificationResults[1] = "Great News! You are on this plan until \(expiryDate)"
+//                        game.currentSubscriber = true
+//
+//
+//                    case .expired(let expiryDate):
+//                        print("AD Subs: VS--- E3.1: Oh dear! \(Id) is expired since \(expiryDate)")
+//                        game.verificationResults[1] = "Oh dear! Your subscription expired on \(expiryDate)"
+//
+//                    case .notPurchased:
+//                        print("AD Subs: VS--- E3.1: Oh dear! The user has never purchased \(Id)")
+//                        game.verificationResults[1] = "Oh dear! The user has never purchased \(Id)"
+//
+//                    }
+//                }
+//
+//
+//                print("Subs: VS--- F")
+//            case .error(let error):
+//                print("Subs: VS--- Receipt verification failed: \(error)")
+//            }
+//        }
+//     //   tableView.reloadData()
+//
+//    }
 
 
 }

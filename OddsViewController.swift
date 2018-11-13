@@ -144,7 +144,9 @@ class OddsViewController: UIViewController {
     
     func configureView(){
         if let hand = self.handItem {
-            self.playerLabel.text = "Player \(hand.uniqueHandRef)"
+    //        self.playerLabel.text = "Player \(hand.uniqueHandRef)"
+            self.playerLabel.text = game.playerNames[hand.uniqueHandRef - 1]
+
             self.bestHands.text = hand.bestCurrentHand()
             let cardNo = hand.allMyCards.count
             if cardNo <= 3 {
