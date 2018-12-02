@@ -111,6 +111,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         if title == "Abort Game" {
             game.userInfo.incMenuAbort()
             clearUp()
+            game.state = "over"
         } 
         if title == "System" {
             game.userInfo.incMenuSystem()
@@ -592,8 +593,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.1))
             playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.05))
             playerAnchors.append(CGPoint(x: wide * 0.7, y: high * 0.1))
-            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.6))
-            playerAnchors.append(CGPoint(x: wide * 0.2, y: high * 0.6))
+            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.5))
+            playerAnchors.append(CGPoint(x: wide * 0.2, y: high * 0.5))
 
         case 6:
             playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.1))
@@ -1357,6 +1358,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 a.screenCard.alpha = 0
             }
         }
+        
     }
     
     public func animateCompletion() {

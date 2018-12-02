@@ -63,9 +63,9 @@ class OddsViewController: UIViewController {
         } else {
             if game.currentSubscriber {
                 populateOverlayCheater()
-                perspectiveLabel.text = "Cheat\'s View"
+                perspectiveLabel.text = "Cheater View"
             } else {
-                presentSubscriptionAlert(functionality: "Switching to Cheat\'s View")
+                presentSubscriptionAlert(functionality: "Switching to Cheater View")
                 perspectiveOutlet.setOn(true, animated: true)
             }
 
@@ -258,7 +258,7 @@ class OddsViewController: UIViewController {
 
             trips4Odds.textColor = UIColor.yellow
 
-                trips5Odds.textColor = UIColor.yellow
+            trips5Odds.textColor = UIColor.yellow
 
             trips6Odds.textColor = UIColor.yellow
 
@@ -284,8 +284,26 @@ class OddsViewController: UIViewController {
 
             high6Odds.textColor = UIColor.yellow
 
-            
-            
+            switch game.oddsFormat {
+            case "IP":
+                popCheaterOverlayPercent()
+            case "Dec":
+                popCheaterOverlayDecimal()
+            case "Fra":
+                popCheaterOverlayFractional()
+            case "Mon":
+                popCheaterOverlayMoneyline()
+            default:
+                popCheaterOverlayPercent()
+            }
+ 
+        }
+        
+    }
+    
+    public func popCheaterOverlayPercent() {
+        if let hand = self.handItem {
+
             straflu3Odds.text = String(format: "%.2f", 100 * hand.odds.strafluRealOdds[0]) + "%"
             straflu4Odds.text = String(format: "%.2f", 100 * hand.odds.strafluRealOdds[1]) + "%"
             straflu5Odds.text = String(format: "%.2f", 100 * hand.odds.strafluRealOdds[2]) + "%"
@@ -328,8 +346,138 @@ class OddsViewController: UIViewController {
             s5tot.text = String(format: "%.2f", hand.odds.highRealOdds[2] + hand.odds.pairRealOdds[2] + hand.odds.twopairRealOdds[2] + hand.odds.tripsRealOdds[2] + hand.odds.runRealOdds[2] + hand.odds.flushRealOdds[2] + hand.odds.fhRealOdds[2] + hand.odds.pokerRealOdds[2] + hand.odds.strafluRealOdds[2])
             s6tot.text = String(format: "%.2f", hand.odds.highRealOdds[3] + hand.odds.pairRealOdds[3] + hand.odds.twopairRealOdds[3] + hand.odds.tripsRealOdds[3] + hand.odds.runRealOdds[3] + hand.odds.flushRealOdds[3] + hand.odds.fhRealOdds[3] + hand.odds.pokerRealOdds[3] + hand.odds.strafluRealOdds[3])
         }
-        
     }
+    
+    
+    public func popCheaterOverlayDecimal() {
+        if let hand = self.handItem {
+            
+            straflu3Odds.text = cvIP_Dec(pc: hand.odds.strafluRealOdds[0])
+            straflu4Odds.text = cvIP_Dec(pc: hand.odds.strafluRealOdds[1])
+            straflu5Odds.text = cvIP_Dec(pc: hand.odds.strafluRealOdds[2])
+            straflu6Odds.text = cvIP_Dec(pc: hand.odds.strafluRealOdds[3])
+            poker3Odds.text = cvIP_Dec(pc:  hand.odds.pokerRealOdds[0])
+            poker4Odds.text = cvIP_Dec(pc:  hand.odds.pokerRealOdds[1])
+            poker5Odds.text = cvIP_Dec(pc:  hand.odds.pokerRealOdds[2])
+            poker6Odds.text = cvIP_Dec(pc:  hand.odds.pokerRealOdds[3])
+            fh3Odds.text = cvIP_Dec(pc:  hand.odds.fhRealOdds[0])
+            fh4Odds.text = cvIP_Dec(pc:  hand.odds.fhRealOdds[1])
+            fh5Odds.text = cvIP_Dec(pc:  hand.odds.fhRealOdds[2])
+            fh6Odds.text = cvIP_Dec(pc:  hand.odds.fhRealOdds[3])
+            flush3Odds.text = cvIP_Dec(pc:  hand.odds.flushRealOdds[0])
+            flush4Odds.text = cvIP_Dec(pc:  hand.odds.flushRealOdds[1])
+            flush5Odds.text = cvIP_Dec(pc:  hand.odds.flushRealOdds[2])
+            flush6Odds.text = cvIP_Dec(pc:  hand.odds.flushRealOdds[3])
+            run3Odds.text = cvIP_Dec(pc:  hand.odds.runRealOdds[0])
+            run4Odds.text = cvIP_Dec(pc:  hand.odds.runRealOdds[1])
+            run5Odds.text = cvIP_Dec(pc:  hand.odds.runRealOdds[2])
+            run6Odds.text = cvIP_Dec(pc:  hand.odds.runRealOdds[3])
+            trips3Odds.text = cvIP_Dec(pc:  hand.odds.tripsRealOdds[0])
+            trips4Odds.text = cvIP_Dec(pc:  hand.odds.tripsRealOdds[1])
+            trips5Odds.text = cvIP_Dec(pc:  hand.odds.tripsRealOdds[2])
+            trips6Odds.text = cvIP_Dec(pc:  hand.odds.tripsRealOdds[3])
+            twoPair3Odds.text = cvIP_Dec(pc: hand.odds.twopairRealOdds[0])
+            twoPair4Odds.text = cvIP_Dec(pc: hand.odds.twopairRealOdds[1])
+            twopair5Odds.text = cvIP_Dec(pc: hand.odds.twopairRealOdds[2])
+            twopair6Odds.text = cvIP_Dec(pc: hand.odds.twopairRealOdds[3])
+            pair3Odds.text = cvIP_Dec(pc:  hand.odds.pairRealOdds[0])
+            pair4Odds.text = cvIP_Dec(pc:  hand.odds.pairRealOdds[1])
+            pair5Odds.text = cvIP_Dec(pc:  hand.odds.pairRealOdds[2])
+            pair6Odds.text = cvIP_Dec(pc:  hand.odds.pairRealOdds[3])
+            high3Odds.text = cvIP_Dec(pc:  hand.odds.highRealOdds[0])
+            high4Odds.text = cvIP_Dec(pc:  hand.odds.highRealOdds[1])
+            high5Odds.text = cvIP_Dec(pc:  hand.odds.highRealOdds[2])
+            high6Odds.text = cvIP_Dec(pc:  hand.odds.highRealOdds[3])
+        }
+    }
+    
+    
+    public func popCheaterOverlayFractional() {
+        if let hand = self.handItem {
+            
+            straflu3Odds.text = cvIP_Fra(pc: hand.odds.strafluRealOdds[0])
+            straflu4Odds.text = cvIP_Fra(pc: hand.odds.strafluRealOdds[1])
+            straflu5Odds.text = cvIP_Fra(pc: hand.odds.strafluRealOdds[2])
+            straflu6Odds.text = cvIP_Fra(pc: hand.odds.strafluRealOdds[3])
+            poker3Odds.text = cvIP_Fra(pc:  hand.odds.pokerRealOdds[0])
+            poker4Odds.text = cvIP_Fra(pc:  hand.odds.pokerRealOdds[1])
+            poker5Odds.text = cvIP_Fra(pc:  hand.odds.pokerRealOdds[2])
+            poker6Odds.text = cvIP_Fra(pc:  hand.odds.pokerRealOdds[3])
+            fh3Odds.text = cvIP_Fra(pc:  hand.odds.fhRealOdds[0])
+            fh4Odds.text = cvIP_Fra(pc:  hand.odds.fhRealOdds[1])
+            fh5Odds.text = cvIP_Fra(pc:  hand.odds.fhRealOdds[2])
+            fh6Odds.text = cvIP_Fra(pc:  hand.odds.fhRealOdds[3])
+            flush3Odds.text = cvIP_Fra(pc:  hand.odds.flushRealOdds[0])
+            flush4Odds.text = cvIP_Fra(pc:  hand.odds.flushRealOdds[1])
+            flush5Odds.text = cvIP_Fra(pc:  hand.odds.flushRealOdds[2])
+            flush6Odds.text = cvIP_Fra(pc:  hand.odds.flushRealOdds[3])
+            run3Odds.text = cvIP_Fra(pc:  hand.odds.runRealOdds[0])
+            run4Odds.text = cvIP_Fra(pc:  hand.odds.runRealOdds[1])
+            run5Odds.text = cvIP_Fra(pc:  hand.odds.runRealOdds[2])
+            run6Odds.text = cvIP_Fra(pc:  hand.odds.runRealOdds[3])
+            trips3Odds.text = cvIP_Fra(pc:  hand.odds.tripsRealOdds[0])
+            trips4Odds.text = cvIP_Fra(pc:  hand.odds.tripsRealOdds[1])
+            trips5Odds.text = cvIP_Fra(pc:  hand.odds.tripsRealOdds[2])
+            trips6Odds.text = cvIP_Fra(pc:  hand.odds.tripsRealOdds[3])
+            twoPair3Odds.text = cvIP_Fra(pc: hand.odds.twopairRealOdds[0])
+            twoPair4Odds.text = cvIP_Fra(pc: hand.odds.twopairRealOdds[1])
+            twopair5Odds.text = cvIP_Fra(pc: hand.odds.twopairRealOdds[2])
+            twopair6Odds.text = cvIP_Fra(pc: hand.odds.twopairRealOdds[3])
+            pair3Odds.text = cvIP_Fra(pc:  hand.odds.pairRealOdds[0])
+            pair4Odds.text = cvIP_Fra(pc:  hand.odds.pairRealOdds[1])
+            pair5Odds.text = cvIP_Fra(pc:  hand.odds.pairRealOdds[2])
+            pair6Odds.text = cvIP_Fra(pc:  hand.odds.pairRealOdds[3])
+            high3Odds.text = cvIP_Fra(pc:  hand.odds.highRealOdds[0])
+            high4Odds.text = cvIP_Fra(pc:  hand.odds.highRealOdds[1])
+            high5Odds.text = cvIP_Fra(pc:  hand.odds.highRealOdds[2])
+            high6Odds.text = cvIP_Fra(pc:  hand.odds.highRealOdds[3])
+        }
+    }
+    
+    
+    public func popCheaterOverlayMoneyline() {
+        if let hand = self.handItem {
+            
+            straflu3Odds.text = cvIP_Mon(pc: hand.odds.strafluRealOdds[0])
+            straflu4Odds.text = cvIP_Mon(pc: hand.odds.strafluRealOdds[1])
+            straflu5Odds.text = cvIP_Mon(pc: hand.odds.strafluRealOdds[2])
+            straflu6Odds.text = cvIP_Mon(pc: hand.odds.strafluRealOdds[3])
+            poker3Odds.text = cvIP_Mon(pc:  hand.odds.pokerRealOdds[0])
+            poker4Odds.text = cvIP_Mon(pc:  hand.odds.pokerRealOdds[1])
+            poker5Odds.text = cvIP_Mon(pc:  hand.odds.pokerRealOdds[2])
+            poker6Odds.text = cvIP_Mon(pc:  hand.odds.pokerRealOdds[3])
+            fh3Odds.text = cvIP_Mon(pc:  hand.odds.fhRealOdds[0])
+            fh4Odds.text = cvIP_Mon(pc:  hand.odds.fhRealOdds[1])
+            fh5Odds.text = cvIP_Mon(pc:  hand.odds.fhRealOdds[2])
+            fh6Odds.text = cvIP_Mon(pc:  hand.odds.fhRealOdds[3])
+            flush3Odds.text = cvIP_Mon(pc:  hand.odds.flushRealOdds[0])
+            flush4Odds.text = cvIP_Mon(pc:  hand.odds.flushRealOdds[1])
+            flush5Odds.text = cvIP_Mon(pc:  hand.odds.flushRealOdds[2])
+            flush6Odds.text = cvIP_Mon(pc:  hand.odds.flushRealOdds[3])
+            run3Odds.text = cvIP_Mon(pc:  hand.odds.runRealOdds[0])
+            run4Odds.text = cvIP_Mon(pc:  hand.odds.runRealOdds[1])
+            run5Odds.text = cvIP_Mon(pc:  hand.odds.runRealOdds[2])
+            run6Odds.text = cvIP_Mon(pc:  hand.odds.runRealOdds[3])
+            trips3Odds.text = cvIP_Mon(pc:  hand.odds.tripsRealOdds[0])
+            trips4Odds.text = cvIP_Mon(pc:  hand.odds.tripsRealOdds[1])
+            trips5Odds.text = cvIP_Mon(pc:  hand.odds.tripsRealOdds[2])
+            trips6Odds.text = cvIP_Mon(pc:  hand.odds.tripsRealOdds[3])
+            twoPair3Odds.text = cvIP_Mon(pc: hand.odds.twopairRealOdds[0])
+            twoPair4Odds.text = cvIP_Mon(pc: hand.odds.twopairRealOdds[1])
+            twopair5Odds.text = cvIP_Mon(pc: hand.odds.twopairRealOdds[2])
+            twopair6Odds.text = cvIP_Mon(pc: hand.odds.twopairRealOdds[3])
+            pair3Odds.text = cvIP_Mon(pc:  hand.odds.pairRealOdds[0])
+            pair4Odds.text = cvIP_Mon(pc:  hand.odds.pairRealOdds[1])
+            pair5Odds.text = cvIP_Mon(pc:  hand.odds.pairRealOdds[2])
+            pair6Odds.text = cvIP_Mon(pc:  hand.odds.pairRealOdds[3])
+            high3Odds.text = cvIP_Mon(pc:  hand.odds.highRealOdds[0])
+            high4Odds.text = cvIP_Mon(pc:  hand.odds.highRealOdds[1])
+            high5Odds.text = cvIP_Mon(pc:  hand.odds.highRealOdds[2])
+            high6Odds.text = cvIP_Mon(pc:  hand.odds.highRealOdds[3])
+        }
+    }
+    
+    
 
     public func populateOverlayPlayer() {
         straflu3Odds.textColor = UIColor.black

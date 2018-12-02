@@ -240,10 +240,20 @@ class PreferencesViewController: UIViewController {
     //    sideMenu.menuDelegate = self
         flagView.layer.cornerRadius = 5.0
         if game.state == "underway" {
+            print("PVC: game state is \(game.state) - disabling player Nos")
+
             playerSliderOutlet.isUserInteractionEnabled = false
             playerSliderOutlet.layer.opacity = 0.5
             playerNoOutlet.textColor = UIColor.gray
             playerNoOutlet.text =  playerNoOutlet.text! + " GAME ON"
+        } else {
+            print("PVC: game state is \(game.state) - enabling player Nos")
+
+            playerSliderOutlet.isUserInteractionEnabled = true
+            playerSliderOutlet.layer.opacity = 1.0
+            playerNoOutlet.textColor = UIColor.white
+            playerNoOutlet.text = String(format: "%.f", playerSliderOutlet.value)
+
         }
         // Do any additional setup after loading the view.
     }
