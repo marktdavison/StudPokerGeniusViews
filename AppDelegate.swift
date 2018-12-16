@@ -89,11 +89,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             game.userInfo = self.userInfo
 
             print("AppD: game.userinfo.subscriptionEnd \(game.userInfo.subscriptionEnd)")
-            print("AppD: game.userinfo.subscriptionEnd \(Date())")
-            print("currentSubscriber = \(game.currentSubscriber)")
+        //    print("AppD: game.userinfo.subscriptionEnd \(Date())")
             if /*game.userInfo.subscriptionEnd == ""  || */ game.userInfo.subscriptionEnd > Date()  {
                 game.currentSubscriber = true
             }
+            print("currentSubscriber = \(game.currentSubscriber)")
+
         //never delete this next line
         // parse-dashboard --appId pokerodds --masterKey DeckOfCards@18 --serverURL "http://pokeroddsserver.herokuapp.com/parse"
         print("AppDel: Ending!")
