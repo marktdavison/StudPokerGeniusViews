@@ -33,6 +33,7 @@ class SubscriptionOptionTableViewCell: UITableViewCell {
         view.backgroundColor = #colorLiteral(red: 0.1369239688, green: 0.1614148617, blue: 0.1697000265, alpha: 1)
         selectedBackgroundView = view
         yourPlanLabel.isHidden = false
+        view.layer.cornerRadius = 5.0
         
     }
 

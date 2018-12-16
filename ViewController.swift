@@ -1136,14 +1136,23 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
 
 
             case 414:
-                game.cardwidth = 60
-                game.cardHeight = 90
-                game.gridCardWidth = 22.0
-                game.gridCardHeight = 33.0
-                game.gridXOffset = 3.0
-                game.splashCardMultiplier = 1.0
-
-                version = "Plus"
+                if self.view.bounds.height == 736 {
+                    game.cardwidth = 60
+                    game.cardHeight = 90
+                    game.gridCardWidth = 22.0
+                    game.gridCardHeight = 33.0
+                    game.gridXOffset = 3.0
+                    game.splashCardMultiplier = 1.0
+                    version = "Plus"
+                } else if self.view.bounds.height == 896 {
+                    game.cardwidth = 60
+                    game.cardHeight = 90
+                    game.gridCardWidth = 26.0
+                    game.gridCardHeight = 39.0
+                    game.gridXOffset = 3.0
+                    game.splashCardMultiplier = 1.0
+                    version = "XR"
+                }
             case 768:
                 game.cardwidth = 80
                 game.cardHeight = 120
