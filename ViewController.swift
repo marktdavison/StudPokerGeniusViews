@@ -378,7 +378,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         var allLabels : [[UILabel]] = []
         for a in anchors {
             playerLabels = []
-            let l : UILabel = UILabel()
+            let l : UILabel = UILabel() // the l label holds the Player's Name
             counter += 1
             l.frame = CGRect(x: a.x, y: a.y, width: 200, height: 60)
             l.textColor = UIColor.white
@@ -388,7 +388,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             self.view.addSubview(l)
             playerLabels.append(l)
             
-            let o : UILabel =    UILabel()
+            let o : UILabel =    UILabel() // Label o holds the 3 options: best, worst, most likely
             o.frame = CGRect(x: Int(a.x) + adjOptX, y: Int(a.y) + adjOptY, width: 200, height: 50)
           //  o.backgroundColor = UIColor.orange
             o.textColor = UIColor.white
@@ -401,7 +401,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
            // self.view.sendSubview(toBack: o)
             playerLabels.append(o)
             game.mainScreenOddsLabels.append(o)
-            let act : UILabel = UILabel()
+            let act : UILabel = UILabel()  // label act holds the actual hand at that point in time
             act.frame = CGRect(x: Int(a.x) + adjActX, y: Int(a.y) + adjActY, width: 200, height: 50)
          //   act.backgroundColor = UIColor.purple
             act.textColor = UIColor.white
@@ -413,7 +413,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             playerLabels.append(act)
             game.mainScreenOddsLabels.append(act)
 
-            let b : UILabel = UILabel()
+            let b : UILabel = UILabel() // label b holds the best hand and is displayed at the end
             b.frame = CGRect(x: Int(a.x) + adjActX, y: Int(a.y) + adjActY, width: 200, height: 28)
       //      b.backgroundColor = UIColor.cyan
             b.textColor = UIColor.white
@@ -936,8 +936,9 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             ci?.center = CGPoint(x: -100, y: game.portraitWidth/3)
             ci?.alpha = 1
             UIView.animate(withDuration: duration) {
-                ci?.center = CGPoint(x: Double(game.portraitHeight)*0.2, y: Double(game.portraitWidth)*0.7)
-                
+      //          ci?.center = CGPoint(x: Double(game.portraitHeight)*0.2, y: Double(game.portraitWidth)*0.7)
+                ci?.center = CGPoint(x: Double(game.portraitWidth)*0.4, y: Double(game.portraitHeight)*0.4)
+
                 ci?.layer.anchorPoint = CGPoint(x: 0.0, y: 1.0)
                 
                 let rotation = CGAffineTransform(rotationAngle: splay)
@@ -1159,23 +1160,31 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 game.gridCardWidth = 24.0
                 game.gridCardHeight = 36.0
                 game.gridXOffset = 2.0
-
+                chosenFontSize = 15
+                game.splashCardMultiplier = 2.5
 
                 version = "iPad"
             case 1536:
                 game.cardwidth = 80
                 game.cardHeight = 120
+                chosenFontSize = 15
+                game.splashCardMultiplier = 2.5
 
                 version = "iPad Retina, iPad3,  iPad Mini4, iPad Mini Retina, iPad Air, iPad Air2, iPad Pro9.7"
             case 2732:
                 game.cardwidth = 100
                 game.cardHeight = 150
-                
+                chosenFontSize = 15
+                game.splashCardMultiplier = 2.5
+
                 version = "iPad Pro"
             default:
                 print("not a normal screen size else and iPad")
-                game.cardwidth = 80
-                game.cardHeight = 120
+                game.cardwidth = 100
+                game.cardHeight = 150
+                chosenFontSize = 15
+                game.splashCardMultiplier = 2.5
+
             }
             game.userInfo.setModel(vers: version)
         }
@@ -2103,7 +2112,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     
         cardImage.center = CGPoint(x: 0, y: high / 2)
         let adjCardX = -wide / 7 // - 50
-        let adjCardY = Double(high) / 4.3 // 120
+        let adjCardY = Double(high) / 4.5 // was 4.3
         var fan : CGFloat = 0
         if cardno > 1 {
             fan = CGFloat(cardno - 1) * 0.25
