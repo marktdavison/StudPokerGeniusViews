@@ -47,11 +47,7 @@ class SystemViewController: UIViewController, UITableViewDelegate, UITableViewDa
         case "UUID":
             answer = game.userInfo.uuid
         case "Application Version":
-            if game.userInfo.appVersion == "po7cs" {
-                answer = "Odds4Poker for 7 Card Stud"
-            } else {
-                answer = "Odds4Poker"
-            }
+                answer = game.userInfo.appVersion
         case "Application Build":
             answer = game.userInfo.appBuild
         case "Release Date":

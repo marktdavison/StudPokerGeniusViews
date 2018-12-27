@@ -370,7 +370,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         let adjOptX = Int(wide / 60) // 5
         let adjOptY = Int(Double(high) / 3.3) //200
         let adjActX = 0
-        let adjActY = Int(high / 20) //25
+        let adjActY = Int(high / 22) //20
         let adjCardX = -Int(wide / 7) // - 50
         let adjCardY = Int(high / 4) // 120
         var counter : Int = 0
@@ -380,7 +380,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             playerLabels = []
             let l : UILabel = UILabel() // the l label holds the Player's Name
             counter += 1
-            l.frame = CGRect(x: a.x, y: a.y, width: 200, height: 60)
+            l.frame = CGRect(x: Int(a.x), y: Int(a.y), width: wide/2, height: 60)
             l.textColor = UIColor.white
             l.textAlignment = NSTextAlignment.left
         //    l.text = "Player \(counter)"
@@ -389,7 +389,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             playerLabels.append(l)
             
             let o : UILabel =    UILabel() // Label o holds the 3 options: best, worst, most likely
-            o.frame = CGRect(x: Int(a.x) + adjOptX, y: Int(a.y) + adjOptY, width: 200, height: 50)
+            o.frame = CGRect(x: Int(a.x) + adjOptX, y: Int(a.y) + adjOptY, width: wide/2, height: 50)
           //  o.backgroundColor = UIColor.orange
             o.textColor = UIColor.white
             o.numberOfLines = 3
@@ -402,7 +402,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             playerLabels.append(o)
             game.mainScreenOddsLabels.append(o)
             let act : UILabel = UILabel()  // label act holds the actual hand at that point in time
-            act.frame = CGRect(x: Int(a.x) + adjActX, y: Int(a.y) + adjActY, width: 200, height: 50)
+            act.frame = CGRect(x: Int(a.x) + adjActX, y: Int(a.y) + adjActY, width: wide/2, height: 50)
          //   act.backgroundColor = UIColor.purple
             act.textColor = UIColor.white
             act.alpha = 1
@@ -414,7 +414,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             game.mainScreenOddsLabels.append(act)
 
             let b : UILabel = UILabel() // label b holds the best hand and is displayed at the end
-            b.frame = CGRect(x: Int(a.x) + adjActX, y: Int(a.y) + adjActY, width: 200, height: 28)
+            b.frame = CGRect(x: Int(a.x) + adjActX, y: Int(a.y) + adjActY, width: wide/2, height: 28)
       //      b.backgroundColor = UIColor.cyan
             b.textColor = UIColor.white
             b.textAlignment = NSTextAlignment.left
@@ -960,6 +960,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        var iPadMultiplier = 1.0
+
     //    print("Dimensions of this screen: Height \(self.view.bounds.height), Width \(self.view.bounds.width)... \(UIDevice).self.self")
         
         if !starterAlreadyShown {
@@ -1112,7 +1114,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 game.cardHeight = 60
                 game.gridCardWidth = 14.0
                 game.gridCardHeight = 21.0
-                game.gridXOffset = 4.0
+                game.gridXOffset = 2.0
                 game.splashCardMultiplier = 0.8
             case 375:
                 // either iPhone 6, 6s, 7 or 8 OR X
@@ -1123,14 +1125,14 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                  //   game.gridXOffset = 3.0
                     game.gridCardWidth = 20.0
                     game.gridCardHeight = 30.0
-                    game.gridXOffset = 3.0
+                    game.gridXOffset = 2.0
                     game.splashCardMultiplier = 0.9
 
                 } else if self.view.bounds.height == 812 {
                     version = "X"
                     game.gridCardWidth = 26.0
                     game.gridCardHeight = 39.0
-                    game.gridXOffset = 3.0
+                    game.gridXOffset = 2.0
                     game.splashCardMultiplier = 1.0
 
                 }
@@ -1157,38 +1159,69 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             case 768:
                 game.cardwidth = 80
                 game.cardHeight = 120
-                game.gridCardWidth = 24.0
-                game.gridCardHeight = 36.0
-                game.gridXOffset = 2.0
+                game.gridCardWidth = 36.0
+                game.gridCardHeight = 54.0
+                game.gridXOffset = 5.0
+                chosenFontSize = 15
+                game.splashCardMultiplier = 2.0
+                print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
+                print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
+                version = "iPad"
+            case 1024:
+                print("1024 width iPad")
+                game.cardwidth = 100
+                game.cardHeight = 150
                 chosenFontSize = 15
                 game.splashCardMultiplier = 2.5
-
-                version = "iPad"
+                game.gridCardWidth = 50.0
+                game.gridCardHeight = 75.0
+                game.gridXOffset = 5.0
+                print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
+                print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
+                version = "iPad Pro 12.9 inch"
             case 1536:
                 game.cardwidth = 80
                 game.cardHeight = 120
                 chosenFontSize = 15
                 game.splashCardMultiplier = 2.5
-
+                game.gridCardWidth = 30.0
+                game.gridCardHeight = 45.0
+                game.gridXOffset = 5.0
+                print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
+                print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
                 version = "iPad Retina, iPad3,  iPad Mini4, iPad Mini Retina, iPad Air, iPad Air2, iPad Pro9.7"
-            case 2732:
+            case 2048:
                 game.cardwidth = 100
                 game.cardHeight = 150
                 chosenFontSize = 15
                 game.splashCardMultiplier = 2.5
+                game.gridCardWidth = 100
+                game.gridCardHeight = 150
+                game.gridXOffset = 5.0
 
                 version = "iPad Pro"
+                print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
+                print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
+
             default:
                 print("not a normal screen size else and iPad")
                 game.cardwidth = 100
                 game.cardHeight = 150
                 chosenFontSize = 15
                 game.splashCardMultiplier = 2.5
+                game.gridCardWidth = 50.0
+                game.gridCardHeight = 75.0
+                game.gridXOffset = 5.0
 
+                print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
+                print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
             }
             game.userInfo.setModel(vers: version)
         }
+        if game.portraitWidth > 500 {
+            iPadMultiplier = 2.0
 
+        }
         outletHitMe.alpha = 0
         outletAddToFavourites.alpha = 0
         outletAddToFavourites.layer.cornerRadius = 5.0
@@ -1197,7 +1230,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
 
         outletHitMe.layer.cornerRadius = 5.0
         outletShuffle.layer.cornerRadius = 5.0
-        let sideMenu = SideMenu(menuWidth: 150, menuItemTitles: normalMenuTitles, parentViewController: self)
+        let sideMenu = SideMenu(menuWidth: CGFloat(150 * iPadMultiplier), menuItemTitles: normalMenuTitles, parentViewController: self)
         sideMenu.menuDelegate = self
         sideMenu.layer.zPosition = 1
 
@@ -1412,11 +1445,14 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         UIView.animate(withDuration: 2) {
             for p in game.playingScreenObjects {
                 p[1].alpha = 0
+              //  p[1].textAlignment = .right
                 p[2].alpha = 0
                 if p[0].text == "Player \(maxIndex! + 1)" {
                     p[0].font = UIFont(name: "Calibri", size: 22)
                     p[0].textColor = UIColor.black
                     p[0].center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height * 0.1)
+                    p[0].textAlignment = .center
+                    p[3].textAlignment = .center
                     p[3].center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height * 0.15)
                     p[3].font = UIFont(name: "Calibri", size: 12)
                     p[3].textColor = UIColor.black
@@ -1492,7 +1528,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                     let playersDisplayedCards = self.activeCards.filter{$0.player == p}  //an array of 7 cards
                     print("Hitme > 7: player is \(p),  playerDisplayedCard.count is \(playersDisplayedCards.count)")
 
-         
+         // if I want to animate discarding then do it here, not sure how just yet.
                     for c in playersDisplayedCards {
                       //  print("Hitme > 7: card.order is \(c.order),  playerDisplayedCard.count is \(playersDisplayedCards.count)")
                         c.revealCard()
@@ -1603,8 +1639,26 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 counter += 1
                 
             } else if street == 7 {
-
+                
                 outletHitMe.setTitle("Reveal Hands", for: UIControlState.normal)
+                print("CHO - reveal hands and hide mainscreenoddslabels")
+               // game.mainScreenOddsHidden = true
+                /*
+                for i in game.mainScreenOddsLabels {
+                    if i.alpha == 1 {
+                        print("CHO before - label visible")
+                    } else {
+                        print("CHO before - label hidden")
+
+                    }
+                    i.alpha = 0
+                    if i.alpha == 1 {
+                        print("CHO after - label visible")
+                    } else {
+                        print("CHO after - label hidden")
+                        
+                    }
+                } */
 
             }
         }
@@ -1626,7 +1680,10 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         }
         if nextCard > 7 {
             for l in game.playingScreenObjects {
-                l[2].alpha = 0
+                UIView.animate(withDuration: 1) {
+                    l[1].alpha = 0
+                    l[2].alpha = 0
+                }
                 print("Imbecile")
             }
         }
@@ -2119,7 +2176,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         }
         // put something in here to mean it has to wait half a second before it starts the next animation
        
-        UIView.animate(withDuration: 1 + Double(player/2)) {
+        UIView.animate(withDuration: 0.25 + Double(player/2)) {
 
         self.dealDisplayedCard(playerNo: player-1, xPos: game.anchors[player-1].x, yPos: game.anchors[player-1].y + CGFloat(adjCardY), splay: fan, ci: self.cardImage)
             

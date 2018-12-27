@@ -32,7 +32,7 @@ class AboutVCViewController: UIViewController, SideMenuDelegate {
     
     let calcOddsText = "The number of possible combinations of 7 cards in a 7-Card Poker game, such as Texas Hold'em or Stud, is  133,784,560. \nThe problem that this app is concerned with is partially probability but largely combinatorics. \nCombinatorics is the essential precursor to understanding the probability of any given event.  The way you count the possible outcomes differs depending upon the nature of the problem. \nOur problem is to understand the probability of getting any one of the 9 possible hands, at any betting point in a game of stud poker, depending upon what the known and unknown cards are in the deck at that moment."
     
-    let aboutVersionText = "This is Odds4Poker - Seven Card Stud\n\nRelease Date 5th July 2018\n\nVersion O4P-7CS-1.0"
+    let aboutVersionText = "This is Odds4Poker - Seven Card Stud\n\nRelease Date 22nd December 2018\n\nVersion O4P-7CS-1.1.3"
     
     let accuracyText = "It is useful to illustrate the problems related to assessing accuracy with an example.\n\nLet us a 6-player game is in progress with 1 card yet to be dealt and nobody has folded.  36 cards will have been dealt, as a player you can see your own hole cards but none of your opponents: so 26 cards are visible to you and 26 are hidden. Your best hand is currently a King high, but as you also have a 10, Jack and Queen you are still on for a straight, your other cards are 6 and 8. You look at the visible cards: no 9s or Aces are out.  The chance of you getting a run is 8 in 26 - just over 30%.  Easy - there are just 26 alternatives and we can know intuitively that that figure is accurate!  The challenge of accuracy becomes clearer however when we consider the odds of a run after only 3 cards have been dealt.  \nIf your first 3 cards had been 6, 8 and King then there were several possible straights to assess:\n\t2,3,4,5,6\n\t3,4,5,6,7\n\t4,5,6,7,8\n\nIn short, there would be a very great number of combinations that could give you a straight.\n\nThe next card will be 1 in 44, the next 1 in 38, the next 1 in 32 and the last 1 in 26.In other words 4 in 44*38*32*26 = nearly 1.4m alternatives.  Odds4Poker looks at each of these combinations and assesses its likelihood.  Great care and attention has gone into achieving an excellent degree of accuracy, however, there will be the occassional combination that we will have missed."
     
@@ -239,9 +239,13 @@ class AboutVCViewController: UIViewController, SideMenuDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var iPadMultiplier = 1.0
+        if game.portraitWidth > 500 {
+            iPadMultiplier = 2.0
+        }
     //    DenominatorSV.co
         // Do any additional setup after loading the view.
-        let sideMenu = SideMenu(menuWidth: 150, menuItemTitles: helpTopics, parentViewController: self)
+        let sideMenu = SideMenu(menuWidth: CGFloat(150 * iPadMultiplier), menuItemTitles: helpTopics, parentViewController: self)
             
             //["Calculating Odd", "HyperGeometric Distribution","About this Version","Accuracy","Probability of Hands", "Future Features","Known Issues","Application: Preferences","Application: Gameplay","Application: Replacing Cards","Application: Deck View", "Application: Calculator","Rating"]
         sideMenu.menuDelegate = self

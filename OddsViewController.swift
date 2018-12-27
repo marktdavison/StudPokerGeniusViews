@@ -865,7 +865,7 @@ class OddsViewController: UIViewController {
     
     
     internal func presentSubscriptionAlert(functionality: String) {
-        let alert = UIAlertController(title: "Sorry but \(functionality) is available only to Pro users. ", message: "You may access a host of features when you go Pro:\n\n\tPerspective Switch\n\tChange to your favoured Odds format\n\tChange upcoming cards\n\tSave & reload games\n\tName Players\n\tHide odds on main screen).\n\nGo to the subscription screen to see your status?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Sorry but \(functionality) is available only to Pro users. ", message: "You may access a host of features when you go Pro:\n\n\tPerspective Switch\n\tChange to your favoured Odds format\n\tChange upcoming cards\n\tSave & reload games\n\tName Players\n\tHide odds on main screen.\n\nGo to the subscription screen to see your status?", preferredStyle: .alert)
         
         let actionLoad = UIAlertAction(title: "Go", style: .default) { (action) in
             print("Pref alert selected Go")
