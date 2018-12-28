@@ -841,9 +841,11 @@ class OddsViewController: UIViewController {
     
      override func viewDidLayoutSubviews() {
      super.viewDidLayoutSubviews()
-     
-     self.view.bounds.size = CGSize(width: UIScreen.main.bounds.size.width - 20, height: 250)
-     
+        if game.portraitWidth < 500 {
+            self.view.bounds.size = CGSize(width: UIScreen.main.bounds.size.width - 20, height: 250)
+        } else {
+            self.view.bounds.size = CGSize(width: UIScreen.main.bounds.size.width / 1.5, height: 300)
+        }
      self.view.layer.cornerRadius = 5
         
      
