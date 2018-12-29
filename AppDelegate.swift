@@ -38,7 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // copied from swiftystorekit completeTransactions
             // see notes below for the meaning of Atomic / Non-Atomic
        /// this was only ever set for testing
-       // game.currentSubscriber = true
+       /// TAKE THIS OOT!!
+       /// game.currentSubscriber = true
         SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
                 for purchase in purchases {
                     switch purchase.transaction.transactionState {

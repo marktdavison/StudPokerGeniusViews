@@ -1447,7 +1447,9 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 p[1].alpha = 0
               //  p[1].textAlignment = .right
                 p[2].alpha = 0
-                if p[0].text == "Player \(maxIndex! + 1)" {
+                if p[0].text == game.playerNames[winningPlayer] {
+               //     if p[0].text == "Player \(maxIndex! + 1)" {
+
                     p[0].font = UIFont(name: "Calibri", size: 22)
                     p[0].textColor = UIColor.black
                     p[0].center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height * 0.1)
