@@ -826,6 +826,9 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 game.gridCardHeight = 21.0
                 game.gridXOffset = 2.0
                 game.splashCardMultiplier = 0.8
+                
+                game.smallScreen = true
+                
             case 375:
                 // either iPhone 6, 6s, 7 or 8 OR X
                 game.cardwidth = 60
