@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tqv-qb-Wyd">
-                                <rect key="frame" x="15.999999999999993" y="52" width="121.5" height="108"/>
+                                <rect key="frame" x="16" y="52" width="121.5" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Straight Flush.......0.03%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTK-GQ-2kQ">
@@ -476,7 +476,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lqy-64-vqI">
-                            <rect key="frame" x="15.999999999999993" y="52" width="121.5" height="108"/>
+                            <rect key="frame" x="16" y="52" width="121.5" height="108"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Straight Flush.......0.03%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt8-h4-nbq">
@@ -2275,10 +2275,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playing a Reloaded Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qy-h9-ILt">
-                                <rect key="frame" x="0.0" y="851" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="869" width="414" height="20"/>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hsB-d0-VfO"/>
+                                    <constraint firstAttribute="height" constant="20" id="hsB-d0-VfO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2320,7 +2320,7 @@
                             <constraint firstAttribute="trailing" secondItem="nvg-6N-YDS" secondAttribute="trailing" constant="16" id="lSw-CP-437"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bu8-3n-CGD" secondAttribute="trailing" constant="16" id="oAj-GE-MxJ"/>
                             <constraint firstItem="Bu8-3n-CGD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="qLH-j4-9bG"/>
-                            <constraint firstAttribute="bottom" secondItem="1qy-h9-ILt" secondAttribute="bottom" constant="15" id="z9p-7w-kxm"/>
+                            <constraint firstAttribute="bottom" secondItem="1qy-h9-ILt" secondAttribute="bottom" constant="7" id="z9p-7w-kxm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2704,7 +2704,7 @@
                                         <color key="textColor" red="0.89694060050000002" green="0.98652873269999997" blue="0.99890942260000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status - Year" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-Fd-CQN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...awaiting server response..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-Fd-CQN">
                                         <rect key="frame" x="16" y="162" width="230" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="230" id="iNK-K8-Vzu"/>
@@ -2781,7 +2781,7 @@
                                         <color key="textColor" red="0.89694060050000002" green="0.98652873269999997" blue="0.99890942260000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status - Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MN-zn-DjY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...awaiting server response..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MN-zn-DjY">
                                         <rect key="frame" x="16" y="162" width="230" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="230" id="6q0-iL-D5b"/>
@@ -3605,7 +3605,7 @@ CgoKCgoKCgo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RG6-0s-Tgx">
-                                <rect key="frame" x="15.999999999999993" y="52" width="121.5" height="108"/>
+                                <rect key="frame" x="16" y="52" width="121.5" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Straight Flush.....0.003%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIJ-cA-zQs">
@@ -4102,8 +4102,8 @@ CgoKCgoKCgo
         <image name="twitter2" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FMt-gr-7gX"/>
-        <segue reference="cLg-ug-7Yf"/>
+        <segue reference="SBE-va-snC"/>
+        <segue reference="Mvj-qp-WGF"/>
         <segue reference="Z1h-uR-PkA"/>
         <segue reference="4id-4k-pvM"/>
     </inferredMetricsTieBreakers>

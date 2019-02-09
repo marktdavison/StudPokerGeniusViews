@@ -826,7 +826,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 game.gridCardHeight = 21.0
                 game.gridXOffset = 2.0
                 game.splashCardMultiplier = 0.8
-                
+           //     reloadedBanner.center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height)
                 game.smallScreen = true
                 
             case 375:
@@ -1158,20 +1158,17 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         UIView.animate(withDuration: 2) {
             for p in game.playingScreenObjects {
                 p[1].alpha = 0
-              //  p[1].textAlignment = .right
                 p[2].alpha = 0
                 if p[0].text == game.playerNames[winningPlayer] {
-               //     if p[0].text == "Player \(maxIndex! + 1)" {
-
                     p[0].font = UIFont(name: "Calibri", size: 22)
                     p[0].textColor = UIColor.black
                     p[0].center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height * 0.1)
                     p[0].textAlignment = .center
+                    p[3].alpha = 1
                     p[3].textAlignment = .center
                     p[3].center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height * 0.15)
                     p[3].font = UIFont(name: "Calibri", size: 12)
                     p[3].textColor = UIColor.black
-              //      p[3].text = p[3].text! + " BIG ONE"
                 } else {
                     p[0].alpha = 0
                     p[3].alpha = 0
@@ -1271,7 +1268,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                     for l in game.playingScreenObjects {
                         l[1].alpha = 0
                         l[2].alpha = 0
-                        l[3].alpha = 1
+                      //  l[3].alpha = 1
                     }
                 } else {
                     for l in game.playingScreenObjects {
@@ -1357,23 +1354,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 
                 outletHitMe.setTitle("Reveal Hands", for: UIControlState.normal)
                 print("CHO - reveal hands and hide mainscreenoddslabels")
-               // game.mainScreenOddsHidden = true
-                /*
-                for i in game.mainScreenOddsLabels {
-                    if i.alpha == 1 {
-                        print("CHO before - label visible")
-                    } else {
-                        print("CHO before - label hidden")
 
-                    }
-                    i.alpha = 0
-                    if i.alpha == 1 {
-                        print("CHO after - label visible")
-                    } else {
-                        print("CHO after - label hidden")
-                        
-                    }
-                } */
 
             }
         }
@@ -1393,11 +1374,14 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 l.alpha = 1
             }
         }
+        // this is the section that changes the displayed screen objects on delivery of the final card
         if nextCard > 7 {
             for l in game.playingScreenObjects {
                 UIView.animate(withDuration: 1) {
                     l[1].alpha = 0
-                    l[2].alpha = 0
+                    l[2].text = l[3].text
+    /****/                l[3].alpha = 0
+                    
                 }
                 print("Imbecile")
             }

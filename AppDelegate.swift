@@ -35,11 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        // copied from swiftystorekit completeTransactions
-            // see notes below for the meaning of Atomic / Non-Atomic
-       /// this was only ever set for testing
+ 
        /// TAKE THIS OOT!!
-       /// game.currentSubscriber = true
+      //  game.currentSubscriber = true
         SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
                 for purchase in purchases {
                     switch purchase.transaction.transactionState {
@@ -47,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         if purchase.needsFinishTransaction {
                             // Deliver content from server, then:
                             SwiftyStoreKit.finishTransaction(purchase.transaction)
+                            print("AppDel: Purchases Restored!!")
                         }
                     // Unlock content
                     case .failed, .purchasing, .deferred:
@@ -54,6 +53,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
             }
+        // added 030119 - as my app can deliver the content
+        
+        SwiftyStoreKit.shouldAddStorePaymentHandler = { payment, product in
+            true
+            
+        }
         print("AppDel: setting up Parse Client Config")
         let config = ParseClientConfiguration { (po7csConfig) in
             po7csConfig.applicationId = "pokerodds"
@@ -84,14 +89,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("AppDel: error = \(String(describing: error)) - ParseDB first time through - creating user info object")
             } else if let dbRecord = loadedObject {
                 self.userInfo.loadUserInfoFromDB(bgObject: dbRecord)
-                print("ParseDB - loading object")
+                print("ParseDB - loading pre-existing database object in a bg object in memory")
 
             }
             game.userInfo = self.userInfo
 
             print("AppD: game.userinfo.subscriptionEnd \(game.userInfo.subscriptionEnd)")
-        //    print("AppD: game.userinfo.subscriptionEnd \(Date())")
-            if /*game.userInfo.subscriptionEnd == ""  || */ game.userInfo.subscriptionEnd > Date()  {
+            if  game.userInfo.subscriptionEnd > Date()  {
                 game.currentSubscriber = true
             }
             print("currentSubscriber = \(game.currentSubscriber)")
