@@ -343,7 +343,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     var cardImage3: UIImageView!
     var cardImage4: UIImageView!
     var cardImage5: UIImageView!
-    var chosenFontSize: CGFloat = 9
+  //  var chosenFontSize: CGFloat = 9
     var maxFontSize = CGFloat()
     
     public var nextCard: Int = 1
@@ -395,7 +395,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             o.numberOfLines = 3
             o.textAlignment = NSTextAlignment.left
             o.text = "Some options"
-            o.font = UIFont(name: "Rockwell", size: chosenFontSize)
+            o.font = UIFont(name: "Rockwell", size: game.chosenFontSize)
             self.view.insertSubview(o, belowSubview: self.view)
          //   self.view.addSubview(o)
            // self.view.sendSubview(toBack: o)
@@ -408,7 +408,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             act.alpha = 1
             act.textAlignment = NSTextAlignment.left
             act.text = "actual stuff"
-            act.font = UIFont(name: "Rockwell", size: chosenFontSize)
+            act.font = UIFont(name: "Rockwell", size: game.chosenFontSize)
             self.view.addSubview(act)
             playerLabels.append(act)
             game.mainScreenOddsLabels.append(act)
@@ -418,7 +418,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
       //      b.backgroundColor = UIColor.cyan
             b.textColor = UIColor.white
             b.textAlignment = NSTextAlignment.left
-            b.font = UIFont(name: "Rockwell", size: chosenFontSize + 4)
+            b.font = UIFont(name: "Rockwell", size: game.chosenFontSize + 4)
             b.text = "Bestest stuff"
             self.view.addSubview(b)
             playerLabels.append(b)
@@ -671,6 +671,10 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     override public func viewDidLoad() {
         super.viewDidLoad()
         var iPadMultiplier = 1.0
+        if game.turnOrange {
+            starterLabel.textColor = .orange
+            
+        }
 
     //    print("Dimensions of this screen: Height \(self.view.bounds.height), Width \(self.view.bounds.width)... \(UIDevice).self.self")
         
@@ -828,9 +832,15 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 game.splashCardMultiplier = 0.8
            //     reloadedBanner.center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height)
                 game.smallScreen = true
+                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
                 
             case 375:
                 // either iPhone 6, 6s, 7 or 8 OR X
+                game.normalScreen = true
+
                 game.cardwidth = 60
                 game.cardHeight = 90
                 if self.view.bounds.height ==  667 {
@@ -849,9 +859,16 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                     game.splashCardMultiplier = 1.0
 
                 }
+                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                
 
 
             case 414:
+                game.normalScreen = true
+
                 if self.view.bounds.height == 736 {
                     game.cardwidth = 60
                     game.cardHeight = 90
@@ -869,22 +886,36 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                     game.splashCardMultiplier = 1.0
                     version = "XR"
                 }
+                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                
             case 768:
+                game.padScreen = true
+
                 game.cardwidth = 80
                 game.cardHeight = 120
                 game.gridCardWidth = 36.0
                 game.gridCardHeight = 54.0
                 game.gridXOffset = 5.0
-                chosenFontSize = 15
+                game.chosenFontSize = 15
                 game.splashCardMultiplier = 2.0
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
                 version = "iPad"
+                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                
             case 1024:
+                game.padScreen = true
+
                 print("1024 width iPad")
                 game.cardwidth = 100
                 game.cardHeight = 150
-                chosenFontSize = 15
+                game.chosenFontSize = 15
                 game.splashCardMultiplier = 2.5
                 game.gridCardWidth = 50.0
                 game.gridCardHeight = 75.0
@@ -892,10 +923,17 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
                 version = "iPad Pro 12.9 inch"
+                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                
             case 1536:
+                game.padScreen = true
+
                 game.cardwidth = 80
                 game.cardHeight = 120
-                chosenFontSize = 15
+                game.chosenFontSize = 15
                 game.splashCardMultiplier = 2.5
                 game.gridCardWidth = 30.0
                 game.gridCardHeight = 45.0
@@ -903,10 +941,17 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
                 version = "iPad Retina, iPad3,  iPad Mini4, iPad Mini Retina, iPad Air, iPad Air2, iPad Pro9.7"
+                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                
             case 2048:
+                game.padScreen = true
+
                 game.cardwidth = 100
                 game.cardHeight = 150
-                chosenFontSize = 15
+                game.chosenFontSize = 15
                 game.splashCardMultiplier = 2.5
                 game.gridCardWidth = 100
                 game.gridCardHeight = 150
@@ -915,12 +960,19 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 version = "iPad Pro"
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
+                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                
 
             default:
                 print("not a normal screen size else and iPad")
+                game.padScreen = true
+
                 game.cardwidth = 100
                 game.cardHeight = 150
-                chosenFontSize = 15
+                game.chosenFontSize = 15
                 game.splashCardMultiplier = 2.5
                 game.gridCardWidth = 50.0
                 game.gridCardHeight = 75.0
@@ -928,6 +980,11 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
 
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
+                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+                
             }
             game.userInfo.setModel(vers: version)
         }

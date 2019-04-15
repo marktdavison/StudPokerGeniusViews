@@ -15,6 +15,8 @@ import SwiftyStoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    
 
     var window: UIWindow?
     var userInfo = UserInfo()
@@ -37,9 +39,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
  
        /// TAKE THIS OOT!!
-      //  game.currentSubscriber = true
+        game.currentSubscriber = true
+        print("AppDel: Hi me!")
+        var myflag : Int = 0
+        
         SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
-                for purchase in purchases {
+
+            myflag += 1
+            game.turnOrange = true
+            print("AppDel: turning things orange")
+            for purchase in purchases {
+
                     switch purchase.transaction.transactionState {
                     case .purchased, .restored:
                         if purchase.needsFinishTransaction {
@@ -55,10 +65,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         // added 030119 - as my app can deliver the content
         
+        print("AppDel: Just before appstore bit")
+
         SwiftyStoreKit.shouldAddStorePaymentHandler = { payment, product in
-            true
+            game.turnOrange = true
+            return(true)
             
+           // print("AppDel: Appstore triggered purchase of IAP")
+        //    myflag += 2
+//
+            //  game.userInfo.incMenuSubscriptions()
+            //    performSegue(withIdentifier: "subSeque", sender: self)
+            // return(true)
         }
+        print(game.currentSubscriber)
+        
         print("AppDel: setting up Parse Client Config")
         let config = ParseClientConfiguration { (po7csConfig) in
             po7csConfig.applicationId = "pokerodds"
