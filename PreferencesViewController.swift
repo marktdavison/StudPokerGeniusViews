@@ -12,8 +12,23 @@ import UIKit
 
 class PreferencesViewController: UIViewController {
     
+   
+    
+    
+    @IBOutlet weak var outletStoredSettings: UILabel!
+    
+    @IBOutlet weak var outletOddsFormat: UILabel!
     
     @IBOutlet weak var flagView: UIImageView!
+    
+    @IBOutlet weak var outletNumberOfPlayers: UILabel!
+    
+    @IBOutlet weak var outletShowHideOdds: UILabel!
+    @IBOutlet weak var outletInGameOdds: UILabel!
+    
+    
+    
+    
     
     @IBOutlet weak var name: UILabel!
     
@@ -174,8 +189,29 @@ class PreferencesViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var zzztaf: UIButton!
+    
+    @IBOutlet weak var zzztaf2: UILabel!
+    
+    @IBOutlet weak var zzztaf3: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        outletStoredSettings.font = UIFont(name: game.mainTitleFont, size: game.mainTitleFontSize+10)
+        outletInGameOdds.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize+10)
+        outletOddsFormat.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize+10)
+        outletNumberOfPlayers.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize+10)
+        name.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize)
+        example.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize)
+        playerNoOutlet.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize)
+        zzztaf.titleLabel?.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize)
+        
+        zzztaf2.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize)
+        
+        zzztaf3.titleLabel?.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize)
+        
+        
         if game.mainScreenOddsHidden {
             outletMainScreenOdds.isOn = false
         } else {

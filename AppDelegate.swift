@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
  
        /// TAKE THIS OOT!!
-        game.currentSubscriber = true
+  //      game.currentSubscriber = true
         print("AppDel: Hi me!")
         var myflag : Int = 0
         

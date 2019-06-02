@@ -17,6 +17,9 @@ class SystemViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return sCellTitles.count
     }
     
+    @IBOutlet weak var outletSystemInformation: UILabel!
+    
+    
 //    @IBOutlet weak var sCell: UITableViewCell!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -24,8 +27,10 @@ class SystemViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let sCell = UITableViewCell(style: UITableViewCellStyle.value2, reuseIdentifier: "SICell")
         sCell.textLabel?.lineBreakMode = .byWordWrapping
         sCell.textLabel?.numberOfLines = 0
+        sCell.textLabel?.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize-2)
         sCell.detailTextLabel?.numberOfLines = 0
         sCell.detailTextLabel?.lineBreakMode = .byWordWrapping
+        sCell.detailTextLabel?.font = UIFont(name: game.bodyFont, size: game.bodyFontSize)
         let title = sCellTitles[indexPath.row]
         switch title {
         case "Device Name":
@@ -101,9 +106,15 @@ class SystemViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         sysinfoTable.separatorStyle = .singleLine
-        sysinfoTable.layer.cornerRadius = 5
+        sysinfoTable.layer.cornerRadius = 5.0
+        sysinfoTable.clipsToBounds = true
+        
         
         sysinfoTable.reloadData()
+        
+        outletSystemInformation.font = UIFont(name: game.mainTitleFont, size: game.mainTitleFontSize+5)
+        
+        
 
         // Do any additional setup after loading the view.
     }

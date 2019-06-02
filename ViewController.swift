@@ -819,7 +819,10 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             } else {
                 checkWidth = game.landscapeHeight
             }
-            
+            game.mainTitleFont = "Baskerville-Bold"
+            game.normalTitleFont = "EuphemiaUCAS-Bold"
+            game.minorTitleFont = "Baskerville"
+            game.bodyFont = "EuphemiaUCAS"
             switch checkWidth {
             case 320:
                 // iPhone 5s SE
@@ -832,15 +835,22 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 game.splashCardMultiplier = 0.8
            //     reloadedBanner.center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height)
                 game.smallScreen = true
-                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+
+                game.mainTitleFontSize = 15.0
+                game.normalTitleFontSize = 9.0
+                game.minorTitleFontSize = 14.0
+                game.bodyFontSize = 9.0
+
                 
             case 375:
                 // either iPhone 6, 6s, 7 or 8 OR X
                 game.normalScreen = true
+ 
 
+                game.mainTitleFontSize = 17.0
+                game.normalTitleFontSize = 12.0
+                game.minorTitleFontSize = 16.0
+                game.bodyFontSize = 13.0
                 game.cardwidth = 60
                 game.cardHeight = 90
                 if self.view.bounds.height ==  667 {
@@ -859,12 +869,6 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                     game.splashCardMultiplier = 1.0
 
                 }
-                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                
-
 
             case 414:
                 game.normalScreen = true
@@ -886,10 +890,11 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                     game.splashCardMultiplier = 1.0
                     version = "XR"
                 }
-                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+               
+                game.mainTitleFontSize = 18.0
+                game.normalTitleFontSize = 12.0
+                game.minorTitleFontSize = 16.0
+                game.bodyFontSize = 13.0
                 
             case 768:
                 game.padScreen = true
@@ -904,10 +909,11 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
                 version = "iPad"
-                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+ 
+                game.mainTitleFontSize = 22.0
+                game.normalTitleFontSize = 18.0
+                game.minorTitleFontSize = 15.0
+                game.bodyFontSize = 18.0
                 
             case 1024:
                 game.padScreen = true
@@ -923,10 +929,11 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
                 version = "iPad Pro 12.9 inch"
-                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+               /// game.smallScreen = true
+                game.mainTitleFontSize = 32.0
+                game.normalTitleFontSize = 24.0
+                game.minorTitleFontSize = 24.0
+                game.bodyFontSize = 18.0
                 
             case 1536:
                 game.padScreen = true
@@ -941,10 +948,11 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
                 version = "iPad Retina, iPad3,  iPad Mini4, iPad Mini Retina, iPad Air, iPad Air2, iPad Pro9.7"
-                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+ 
+                game.mainTitleFontSize = 32.0
+                game.normalTitleFontSize = 24.0
+                game.minorTitleFontSize = 24.0
+                game.bodyFontSize = 18.0
                 
             case 2048:
                 game.padScreen = true
@@ -960,10 +968,11 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 version = "iPad Pro"
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
-                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+
+                game.mainTitleFontSize = 32.0
+                game.normalTitleFontSize = 24.0
+                game.minorTitleFontSize = 24.0
+                game.bodyFontSize = 18.0
                 
 
             default:
@@ -980,10 +989,12 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
 
                 print("Grid card for \(checkWidth): width = \(game.gridCardWidth)")
                 print("Grid card for \(checkWidth): height = \(game.gridCardHeight)")
-                game.mainTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.normalTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.minorTitleFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
-                game.bodyFont = UIFont(name: "Avenir Book", size: game.chosenFontSize + 3)!
+
+      //          game.smallScreen = true
+                game.mainTitleFontSize = 32.0
+                game.normalTitleFontSize = 24.0
+                game.minorTitleFontSize = 24.0
+                game.bodyFontSize = 18.0
                 
             }
             game.userInfo.setModel(vers: version)
@@ -996,6 +1007,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         outletAddToFavourites.alpha = 0
         outletAddToFavourites.layer.cornerRadius = 5.0
         let normalMenuTitles = ["Settings", "Abort Game", "Deck","Calculator","Replace Card","Favourites","About","System","Subscriptions"]
+
         let ingameMenuTitles = ["Settings", "Abort Game", "Deck","Calculator","Replace Card","Favourites","About","System","Subscriptions"]
 
         outletHitMe.layer.cornerRadius = 5.0
@@ -1190,14 +1202,15 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         // 5. Make bigger and animate to the top of the screen
         // 6. identify the next best
         // 7. animate to next position
-        // 8. repeat stages 6 and 7 
+        // 8. repeat stages 6 and 7
+        // never did do 6-8 above
         print("in animateCompletion")
         var allHandValsdict = [Int : Int]()
         var allHandVals = [Int]()
-        var indexVals = [Int]()
+     ///   var indexVals = [Int]()
 
-        var sortedHandVals = [Int : Int]()
-        var count : Int = 0
+     ///   var sortedHandVals = [Int : Int]()
+   ///     var count : Int = 0
 //        InsertionViewController.clearUpInsertions()
         
         for p in allPlayers {
@@ -1293,26 +1306,38 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 print("Hitme > 7: player is \(p)")
 
                  // reveal all the cards
-                UIView.animate(withDuration: 3) {
+                UIView.animate(withDuration: 5) {
                     let playersDisplayedCards = self.activeCards.filter{$0.player == p}  //an array of 7 cards
+                    var disCards = playersDisplayedCards
                     print("Hitme > 7: player is \(p),  playerDisplayedCard.count is \(playersDisplayedCards.count)")
 
          // if I want to animate discarding then do it here, not sure how just yet.
+                    // i will take a copy of playerDisplayedCards and as it loops thru the myFiveCards I will remove the myFive card, the result will be an array of 2 disCards
                     for c in playersDisplayedCards {
-                      //  print("Hitme > 7: card.order is \(c.order),  playerDisplayedCard.count is \(playersDisplayedCards.count)")
+                        print("Hitme > 7: card.order is \(c.order),  playerDisplayedCard.count is \(playersDisplayedCards.count)")
                         c.revealCard()
-                        c.screenCard.alpha = 0
+                    //    c.screenCard.alpha = 0
                         for myFiveCard in self.allPlayers[p-1].playerHand.myFive {
                             print("Hitme > 7: screenCard.order is \(c.order),  myFiveCard.order is \(myFiveCard.getOrder) - desc: \(myFiveCard.description)")
 
                             if c.order == myFiveCard.getOrder {
                                 print("Hitme > 7: MATCH!!!")
                                 c.screenCard.alpha = 1
+                                disCards = disCards.filter {$0.order != c.order}
                      //           c.revealCard()
                             }
                         }
+
+                        
                     }
+                    for d in disCards {
+                        print("Discardx: Player \(p), order is \(d.order)")
+                        d.screenCard.center = CGPoint(x: self.view.bounds.width * 1.2, y: self.view.bounds.height * 0.8)
+                        d.screenCard.alpha = 0
+                    }
+
                 }
+                
             }
             outletHitMe.setTitle("Finish", for: UIControlState.normal)
             game.state = "over"

@@ -21,6 +21,10 @@ class NameViewController: UIViewController {
     
     @IBOutlet weak var p6Name: UITextField!
     
+    @IBOutlet weak var outletNamePlayers: UILabel!
+    
+    @IBOutlet weak var outletSaveNames: UIButton!
+    
     @IBAction func saveNames(_ sender: UIButton) {
 //        if p1Name.text != "Player 1" {
             game.playerNames[0] = p1Name.text!
@@ -54,15 +58,25 @@ class NameViewController: UIViewController {
         UserDefaults.standard.set(game.mainScreenOddsHidden, forKey: "mainScreenOddsHidden")
     }
     
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        outletNamePlayers.font = UIFont(name: game.mainTitleFont, size: game.mainTitleFontSize+10)
         p1Name.text = game.playerNames[0]
         p2Name.text = game.playerNames[1]
         p3Name.text = game.playerNames[2]
         p4Name.text = game.playerNames[3]
         p5Name.text = game.playerNames[4]
         p6Name.text = game.playerNames[5]
+        outletSaveNames.titleLabel?.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize+10)
+
+        p1Name.font = UIFont(name: game.bodyFont, size: game.bodyFontSize)
+        p2Name.font = UIFont(name: game.bodyFont, size: game.bodyFontSize)
+        p3Name.font = UIFont(name: game.bodyFont, size: game.bodyFontSize)
+        p4Name.font = UIFont(name: game.bodyFont, size: game.bodyFontSize)
+        p5Name.font = UIFont(name: game.bodyFont, size: game.bodyFontSize)
+        p6Name.font = UIFont(name: game.bodyFont, size: game.bodyFontSize)
 
         if game.players == 2 {
             p1Name.alpha = 1
@@ -115,14 +129,6 @@ class NameViewController: UIViewController {
         
     }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -73,7 +73,7 @@ class FavouritesViewController: UIViewController, UITableViewDelegate, UITableVi
         
      //   fCell.detailTextLabel?.text = arg2
         fCell.textLabel?.textColor = UIColor.white
-        fCell.textLabel?.font = UIFont(name:"Avenir", size:16)
+        fCell.textLabel?.font = UIFont(name:game.bodyFont, size:game.bodyFontSize)
         fCell.backgroundColor = UIColor.clear
         fCell.detailTextLabel?.text = time
         fCell.detailTextLabel?.font = UIFont(name:"Avenir", size:14)
@@ -99,12 +99,16 @@ class FavouritesViewController: UIViewController, UITableViewDelegate, UITableVi
 
     }
 
+    @IBOutlet weak var outletStoredFavourites: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        outletStoredFavourites.font = UIFont(name: game.mainTitleFont, size: game.mainTitleFontSize)
         fCellContents = realm.objects(Data2.self)
         game.userInfo.setFavesStored(numFavesStored: (fCellContents?.count)!)
         favouritesTable.separatorStyle = .singleLine
         outletLoad.alpha = 0
+        outletLoad.titleLabel?.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize)
 
 //        if let faves = UserDefaults.standard.object(forKey: "favourites")  as? [[Card]] {
 //

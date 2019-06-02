@@ -10,6 +10,7 @@ import UIKit
 
 class FreeFormViewController: UIViewController {
 
+    @IBOutlet weak var outletOddsCalculator: UILabel!
     
     internal func didSelectMenuItem(withTitle title: String, index: Int) {
         print("In didSelectMenuItem of Free-Form ViewController \(title)")
@@ -44,6 +45,14 @@ class FreeFormViewController: UIViewController {
     @IBOutlet weak var newLog: UITextView!
     
     @IBOutlet weak var matchesNeeded: UILabel!
+  
+    @IBOutlet weak var labOuts: UILabel!
+    
+    @IBOutlet weak var labDraws: UILabel!
+    
+    @IBOutlet weak var labCardsLeft: UILabel!
+    
+    
     var resultLine: String = ""
 
     
@@ -58,59 +67,71 @@ class FreeFormViewController: UIViewController {
         var r8PopIsZero : Bool = false
         var r9NeededIsZero : Bool = false
 
-        let sizeOftrial = Int(draws.text!)
-        let succInPop = Int(outs.text!)
-        let sizeOfPop = Int(deckSize.text!)
-        let succReqd = Int(matchesReqd.text!)
+        guard let sizeOftrial = Int(draws.text!) else { return }
+        guard let succInPop = Int(outs.text!) else { return }
+        
+        guard let sizeOfPop = Int(deckSize.text!) else { return }
+        guard let succReqd = Int(matchesReqd.text!) else { return }
+   
+        
+        
+//        let sizeOftrial = Int(draws.text!)
+//        let succInPop = Int(outs.text!)
+//        let sizeOfPop = Int(deckSize.text!)
+//        let succReqd = Int(matchesReqd.text!)
+        
+
+        
         
         var ruleBreaks : Int = 0
         var rulesString = String()
         game.userInfo.incCalcButton()
         
-        if sizeOftrial! < succReqd! {
+        
+        if sizeOftrial < succReqd {
             ruleBreaks += 1
             r1DrawsLTNeeded = true
             rulesString += String(ruleBreaks) + ": Not enough draws left.\n"
         }
         
-        if sizeOftrial! > sizeOfPop! {
+        if sizeOftrial > sizeOfPop {
             ruleBreaks += 1
             r2DrawsMTPop = true
             rulesString += String(ruleBreaks) + ": More draws than cards in deck.\n"
         }
         
-        if succInPop! > sizeOfPop! {
+        if succInPop > sizeOfPop {
             ruleBreaks += 1
             r3OutsMTPop = true
             rulesString += String(ruleBreaks) + ": Number of Outs more than cards in deck.\n"
         }
         
-        if succInPop! < succReqd! {
+        if succInPop < succReqd {
             ruleBreaks += 1
             r4OutsLTNeeded = true
             rulesString += String(ruleBreaks) + ": Not enough Outs to satisfy need.\n"
 
         }
         
-        if sizeOfPop! < succReqd! {
+        if sizeOfPop < succReqd {
             ruleBreaks += 1
             r5PopLTNeeded = true
             rulesString += String(ruleBreaks) + ": Not enough cards left to satisfy need.\n"
 
         }
-        if sizeOftrial! == 0 {
+        if sizeOftrial == 0 {
             ruleBreaks += 1
             r6DrawsIsZero = true
             rulesString += String(ruleBreaks) + ": Draws cannot be zero.\n"
             
         }
-        if succInPop! == 0 {
+        if succInPop == 0 {
             ruleBreaks += 1
             r7OutsIsZero = true
             rulesString += String(ruleBreaks) + ": Outs cannot be zero.\n"
             
         }
-        if sizeOfPop! == 0 {
+        if sizeOfPop == 0 {
             ruleBreaks += 1
             r8PopIsZero = true
             rulesString += String(ruleBreaks) + ": Remaining deck size cannot be zero.\n"
@@ -139,9 +160,9 @@ class FreeFormViewController: UIViewController {
             alert.addAction(actionCancel)
             return
         }
-        let chance2 = Hypergeometric(numberOfTrials: sizeOftrial!, successesInPopulation: succInPop!, population: sizeOfPop!)
+        let chance2 = Hypergeometric(numberOfTrials: sizeOftrial, successesInPopulation: succInPop, population: sizeOfPop)
         
-        let prob = chance2.probability(of: succReqd!)
+        let prob = chance2.probability(of: succReqd)
         //  let odds = 1/prob
         result.text = String(format: "%.1f", prob*100) + "%"
         
@@ -158,6 +179,19 @@ class FreeFormViewController: UIViewController {
         newLog.text = game.calcResults
         calcOddsOutlet.layer.cornerRadius = 10.0
         result.layer.cornerRadius = 10.0
+        logTV?.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize+10)
+        outletOddsCalculator.font = UIFont(name: game.mainTitleFont, size: game.mainTitleFontSize+10)
+        draws.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize)
+        outs.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize)
+        matchesReqd.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize)
+        deckSize.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize)
+        matchesNeeded.font = UIFont(name: game.bodyFont, size: game.bodyFontSize-2)
+        labOuts.font = UIFont(name: game.bodyFont, size: game.bodyFontSize-2)
+        labDraws.font = UIFont(name: game.bodyFont, size: game.bodyFontSize-2)
+        labCardsLeft.font = UIFont(name: game.bodyFont, size: game.bodyFontSize-2)
+        calcOddsOutlet.titleLabel?.font = UIFont(name: game.minorTitleFont, size: game.minorTitleFontSize)
+        newLog.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize+4)
+        
    //     let sideMenu = SideMenu(menuWidth: 150, menuItemTitles: ["Preferences", "Current Deck"], parentViewController: self)
    //     sideMenu.menuDelegate = self
 

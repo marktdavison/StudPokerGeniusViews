@@ -32,13 +32,13 @@ class AboutVCViewController: UIViewController, SideMenuDelegate {
     
     let calcOddsText = "The number of possible combinations of 7 cards in a 7-Card Poker game, such as Texas Hold'em or Stud, is  133,784,560. \nThe problem that this app is concerned with is partially probability but largely combinatorics. \nCombinatorics is the essential precursor to understanding the probability of any given event.  The way you count the possible outcomes differs depending upon the nature of the problem. \nOur problem is to understand the probability of getting any one of the 9 possible hands, at any betting point in a game of stud poker, depending upon what the known and unknown cards are in the deck at that moment."
     
-    let aboutVersionText = "This is Odds4Poker - Seven Card Stud\n\nRelease Date 22nd December 2018\n\nVersion O4P-7CS-1.1.3"
+    let aboutVersionText = "This is Odds4Poker - Seven Card Stud\n\n\t\tRelease Date: \(game.appReleaseDate)\n\n\t\tVersion:  \(game.appVersion)\n\n\t\tBuild: \(game.appBuild)"
     
     let accuracyText = "It is useful to illustrate the problems related to assessing accuracy with an example.\n\nLet us a 6-player game is in progress with 1 card yet to be dealt and nobody has folded.  36 cards will have been dealt, as a player you can see your own hole cards but none of your opponents: so 26 cards are visible to you and 26 are hidden. Your best hand is currently a King high, but as you also have a 10, Jack and Queen you are still on for a straight, your other cards are 6 and 8. You look at the visible cards: no 9s or Aces are out.  The chance of you getting a run is 8 in 26 - just over 30%.  Easy - there are just 26 alternatives and we can know intuitively that that figure is accurate!  The challenge of accuracy becomes clearer however when we consider the odds of a run after only 3 cards have been dealt.  \nIf your first 3 cards had been 6, 8 and King then there were several possible straights to assess:\n\t2,3,4,5,6\n\t3,4,5,6,7\n\t4,5,6,7,8\n\nIn short, there would be a very great number of combinations that could give you a straight.\n\nThe next card will be 1 in 44, the next 1 in 38, the next 1 in 32 and the last 1 in 26.In other words 4 in 44*38*32*26 = nearly 1.4m alternatives.  Odds4Poker looks at each of these combinations and assesses its likelihood.  Great care and attention has gone into achieving an excellent degree of accuracy, however, there will be the occassional combination that we will have missed."
     
         let accuracyText2 = "There is a surrogate measure that is simple and fairly effective means of knowing how accurate the results of the Odds4Poker are.\nWhen the odds of the 9 possible hands are calculated they should theoretically add up to 100%. (Each such group of calculations is a single data point.) If they add up to 50% or 150% then you can know that the results are worthless.  However, Odds4Poker results trend to between 99%-101% after several data points are assessed. At Odds4Poker we are committed to improving the level of accuracy to its absolute maximum."
     
-    let mainScreenText = "This is where you play a game of 7-Card Poker. \nYou can change the number of players in the game via Settings and also name them.\nYou can see a subset of Odds information for each player - this can be hidden via Settings.  The Odds information is dynamically updated as each card is dealt.\nAs the game finishes - on dealing of the 7th Card - the 2 worst cards are discarded and the best 5 are selected.  The best hand overall is animated to the top of the screen."
+    let mainScreenText = "This is where you play a game of 7-Card Poker. \nYou can change the number of players in the game via Settings and also name them.\nYou can see a subset of Odds information for each player - this can be hidden via Settings.  The Odds information is dynamically updated as each card is dealt.\nAs the game finishes - on dealing of the 7th Card - the 2 worst cards are discarded and the best 5 are selected.  The best hand overall moves to the top of the screen."
     
     let sevenCardStudText = ""
     
@@ -77,6 +77,7 @@ class AboutVCViewController: UIViewController, SideMenuDelegate {
             upperTV.text = mainScreenText
          //   lowerTV.alpha = 0
             helpImage.alpha = 1
+            newTV.alpha = 0
             helpImage.image = #imageLiteral(resourceName: "MainAnnoted1")
         }
         if title == "Odds Viewer" {
@@ -239,6 +240,9 @@ class AboutVCViewController: UIViewController, SideMenuDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleLabel.font = UIFont(name: game.mainTitleFont, size: game.mainTitleFontSize+6)
+        upperTV.font = UIFont(name: game.normalTitleFont, size: game.normalTitleFontSize)
+        newTV.font = UIFont(name: game.bodyFont, size: game.bodyFontSize)
         var iPadMultiplier = 1.0
         if game.portraitWidth > 500 {
             iPadMultiplier = 2.0
@@ -250,10 +254,10 @@ class AboutVCViewController: UIViewController, SideMenuDelegate {
             //["Calculating Odd", "HyperGeometric Distribution","About this Version","Accuracy","Probability of Hands", "Future Features","Known Issues","Application: Preferences","Application: Gameplay","Application: Replacing Cards","Application: Deck View", "Application: Calculator","Rating"]
         sideMenu.menuDelegate = self
         sideMenu.layer.zPosition = 1
-        titleLabel.text = "What is the purpose of the Odds4Poker?"
-        upperTV.text = "The difference between a good poker player and a great one is recognition of the  chances of making any hand. \nMost good players  have a sense of probability but it is rarely based on more than a hunch and almost never the result of accurate data.\n\n This App changes that.\n\nBy running game simulations you will quickly understand the real chances of getting a hand and will be surprises how inaccurate your hunches often are.   "
-        newTV.text = ""
-        newTV.alpha = 0
+        titleLabel.text = "Odds4Poker - Overview"
+        upperTV.text = "Odds4Poker - 7-Card Stud helps you to become a better poker player by appreciating the reality of odds.\n\nSwipe right to see a menu of helpful information."
+        newTV.text = "The difference between a good poker player and a great one is recognition of the chances of making any hand. \n\nMost good players  have a sense of probability but it is rarely based on more than a hunch and almost never the result of accurate information.\n\nThis App changes that.\n\nBy running game simulations you will quickly understand the real chances of getting each of the 9 main hands.  You will be surprised how inaccurate your hunches often are!"
+        newTV.alpha = 1
         helpImage.alpha = 0
 //        UIView.animate(withDuration: 5) {
 //            self.lowerTV.text = "\n\nSwipe Right to select a topic from the About Menu"
