@@ -1,0 +1,2292 @@
+2017-10-28 10:47:45.952264+0100 DeckOfCards[88961:27457117] [MC] Lazy loading NSBundle MobileCoreServices.framework
+2017-10-28 10:47:45.953387+0100 DeckOfCards[88961:27457117] [MC] Loaded MobileCoreServices.framework
+2017-10-28 10:47:45.973064+0100 DeckOfCards[88961:27457117] [MC] System group container for systemgroup.com.apple.configurationprofiles path is /Users/markdavison/Library/Developer/CoreSimulator/Devices/E5DB3C7B-DE85-45B3-A8AD-C38B9ABAEE7F/data/Containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Queen of Diamonds 24 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Ace of Clubs 26 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Deuce of Spades 40 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Ten of Clubs 35 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 1
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Six of Clubs 31 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 1
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Six of Diamonds 18 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 1
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Four of Diamonds 16 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 1
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Trip of Clubs 28 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 1
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 1
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Deuce of Hearts 1 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 1
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 1
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Ace of Diamonds 13 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 1
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 1
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Ten of Diamonds 22 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 1
+Updating matches for key Trip with value: 1
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Eight of Spades 46 
+
+Hand 1: 2 to a run of Six high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Deuce is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Queen is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Six is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Deuce Queen Six is 0.428532034194325 with 9 of them in the remaining 46
+trip odds are: 0.0498023715415028, pair odds are: 0.428532034194325, and house odds are therefore: 0.0213419115843818
+Hand 1: 2 to a run of Six high
+TripOdds: chance of making Trip of single card: Deuce is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Queen is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Six is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Deuce Queen Six is 0.428532034194325 with 9 of them in the remaining 46
+Calling highOdds from setOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Aces in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 3 Tens in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Trips in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Fours in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Eights in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Sevens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting one of the 9 Deuce Queen Six   in the remaining 46 is 0.404724698961298
+highOdds: chance of making a pair therefore is 0.404724698961298 - 0.271403621656407  = 0.13332107730489!
+Back from highOdds in setOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.01
+Base odds for 4: 0.02
+Base odds for 5: 0.05
+Base odds for 6: 0.26
+Base odds for 7: 0.43
+Base odds for 8: 0.13
+Pre-Adjustment total odds are: 0.92
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.05
+Normalised odds for 6: 0.26
+Normalised odds for 7: 0.43
+Normalised odds for 8: 0.13
+Post-Adjustment total odds are: 0.89
+Check setOdds-BELOW: total odds are well below what they should be: 0.892021814345611. On 3 street
+Hand 1: 2 to a run of Six high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Deuce is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Queen is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Six is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Deuce Queen Six is 0.428532034194325 with 9 of them in the remaining 46
+trip odds are: 0.0498023715415028, pair odds are: 0.428532034194325, and house odds are therefore: 0.0213419115843818
+Hand 1: 2 to a run of Six high
+TripOdds: chance of making Trip of single card: Deuce is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Queen is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Six is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Deuce Queen Six is 0.428532034194325 with 9 of them in the remaining 46
+Calling highOdds from setPublicOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Aces in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 3 Tens in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Trips in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Fours in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Eights in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Sevens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting one of the 9 Deuce Queen Six   in the remaining 46 is 0.404724698961298
+highOdds: chance of making a pair therefore is 0.404724698961298 - 0.271403621656407  = 0.13332107730489!
+Back from highOdds in setPublicOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.01
+Base odds for 4: 0.02
+Base odds for 5: 0.05
+Base odds for 6: 0.26
+Base odds for 7: 0.43
+Base odds for 8: 0.13
+Pre-Adjustment total odds are: 0.92
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.05
+Normalised odds for 6: 0.26
+Normalised odds for 7: 0.43
+Normalised odds for 8: 0.13
+Hand 1: 2 to a run of Six high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Deuce is 0.00769230769230781 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Queen is 0.0218623481781374 with 3 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Six is 0.00769230769230781 with 2 of them in the remaining 40
+PairOdds: chance of making pair of Deuce Queen Six is 0.417901302111832 with 7 of them in the remaining 40
+trip odds are: 0.0372469635627531, pair odds are: 0.417901302111832, and house odds are therefore: 0.0155655545725865
+Hand 1: 2 to a run of Six high
+TripOdds: chance of making Trip of single card: Deuce is 0.00769230769230781 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Queen is 0.0218623481781374 with 3 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Six is 0.00769230769230781 with 2 of them in the remaining 40
+PairOdds: chance of making pair of Deuce Queen Six is 0.417901302111832 with 7 of them in the remaining 40
+Calling highOdds from setRealOdds
+highOdds: chance of not getting one of the 7 Deuce Queen Six   in the remaining 40 is 0.447751395119821
+highOdds: chance of making a pair therefore is 0.447751395119821 - 0.287777656198711  = 0.159973738921109!
+Back from highOdds in setRealOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.01
+Base odds for 4: 0.02
+Base odds for 5: 0.04
+Base odds for 6: 0.22
+Base odds for 7: 0.42
+Base odds for 8: 0.16
+Pre-Adjustment total odds are: 0.88
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.04
+Normalised odds for 6: 0.22
+Normalised odds for 7: 0.42
+Normalised odds for 8: 0.16
+Post-Adjustment total odds are: 0.85
+Check setRealOdds-BELOW: total odds are well below what they should be: 0.849939121212097. On 3 street
+Post-Adjustment total odds are: 0.85
+Hand 2: 1 to a run of Ace high
+Entering fhOdds
+S1
+S1 0.0368264879418008
+S2
+S2 0.0166007905138343
+S3
+S3 0.00902656494163077
+S1+S2+S3  0.0624538433972659
+Hand 2: 1 to a run of Ace high
+TripOdds: chance of making Trip of Paired card(s): Ace is 0.16231884057971 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Six is 0.0166007905138343 with 3 of them in the remaining 46
+Calling highOdds from setOdds
+Back from highOdds in setOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.01
+Base odds for 2: 0.06
+Base odds for 3: 0.03
+Base odds for 4: 0.01
+Base odds for 5: 0.18
+Base odds for 6: 0.23
+i is 7
+Base odds for 7: 1.00
+i is 8
+Base odds for 8: 1.00
+Pre-Adjustment total odds are: 0.51
+Reducing item 7 down from 1.0 to 0.490928460606321
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.01
+Normalised odds for 2: 0.06
+Normalised odds for 3: 0.03
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.18
+Normalised odds for 6: 0.23
+Normalised odds for 7: 0.49
+Normalised odds for 8: 0.00
+Post-Adjustment total odds are: 1.00
+Check setOdds-BINGO: TOTAL ODDS ARE IN THE ZONE!! odds are1.0. On 3 street
+Hand 2: 1 to a run of Ace high
+Entering fhOdds
+S1
+S1 0.0368264879418008
+S2
+S2 0.0166007905138343
+S3
+S3 0.00902656494163077
+S1+S2+S3  0.0624538433972659
+Hand 2: 1 to a run of Ace high
+TripOdds: chance of making Trip of Paired card(s): Ace is 0.16231884057971 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Six is 0.0166007905138343 with 3 of them in the remaining 46
+Calling highOdds from setPublicOdds
+Back from highOdds in setPublicOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.01
+Base odds for 2: 0.06
+Base odds for 3: 0.03
+Base odds for 4: 0.01
+Base odds for 5: 0.18
+Base odds for 6: 0.23
+i is 7
+Base odds for 7: 1.00
+i is 8
+Base odds for 8: 1.00
+Pre-Adjustment total odds are: 0.51
+Reducing item 7 down from 1.0 to 0.490928460606321
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.01
+Normalised odds for 2: 0.06
+Normalised odds for 3: 0.03
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.18
+Normalised odds for 6: 0.23
+Normalised odds for 7: 0.49
+Normalised odds for 8: 0.00
+Hand 2: 1 to a run of Ace high
+Entering fhOdds
+S1
+S1 0.0340828402366874
+S2
+S2 0.00769230769230781
+S3
+S3 0.00949775686617793
+S1+S2+S3  0.0512729047951731
+Hand 2: 1 to a run of Ace high
+TripOdds: chance of making Trip of Paired card(s): Ace is 0.184615384615387 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Six is 0.00769230769230781 with 2 of them in the remaining 40
+Calling highOdds from setRealOdds
+Back from highOdds in setRealOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.01
+Base odds for 2: 0.05
+Base odds for 3: 0.02
+Base odds for 4: 0.00
+Base odds for 5: 0.19
+Base odds for 6: 0.18
+i is 7
+Base odds for 7: 1.00
+i is 8
+Base odds for 8: 1.00
+Pre-Adjustment total odds are: 0.46
+Reducing item 7 down from 1.0 to 0.538374857408464
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.01
+Normalised odds for 2: 0.05
+Normalised odds for 3: 0.02
+Normalised odds for 4: 0.00
+Normalised odds for 5: 0.19
+Normalised odds for 6: 0.18
+Normalised odds for 7: 0.54
+Normalised odds for 8: 0.00
+Post-Adjustment total odds are: 1.00
+Check setRealOdds-BINGO: TOTAL ODDS ARE IN THE ZONE!! odds are1.0. On 3 street
+Post-Adjustment total odds are: 1.00
+Hand 3: 2 to a run of Six high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Deuce is 0.0057971014492754 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Four is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Ten Deuce Four is 0.413567423476434 with 8 of them in the remaining 46
+trip odds are: 0.038998682476944, pair odds are: 0.413567423476434, and house odds are therefore: 0.0161285846309653
+Hand 3: 2 to a run of Six high
+TripOdds: chance of making Trip of single card: Ten is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Deuce is 0.0057971014492754 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Four is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Ten Deuce Four is 0.413567423476434 with 8 of them in the remaining 46
+Calling highOdds from setOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Aces in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Trips in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Queens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Sixs in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Eights in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Sevens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting one of the 8 Ten Deuce Four   in the remaining 46 is 0.452339369427355
+highOdds: chance of making a pair therefore is 0.452339369427355 - 0.286460152587559  = 0.165879216839795!
+Back from highOdds in setOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.03
+Base odds for 4: 0.02
+Base odds for 5: 0.04
+Base odds for 6: 0.22
+Base odds for 7: 0.41
+Base odds for 8: 0.17
+Pre-Adjustment total odds are: 0.90
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.03
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.04
+Normalised odds for 6: 0.22
+Normalised odds for 7: 0.41
+Normalised odds for 8: 0.17
+Post-Adjustment total odds are: 0.85
+Check setOdds-BELOW: total odds are well below what they should be: 0.850921424560367. On 3 street
+Hand 3: 2 to a run of Six high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Deuce is 0.0057971014492754 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Four is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Ten Deuce Four is 0.413567423476434 with 8 of them in the remaining 46
+trip odds are: 0.038998682476944, pair odds are: 0.413567423476434, and house odds are therefore: 0.0161285846309653
+Hand 3: 2 to a run of Six high
+TripOdds: chance of making Trip of single card: Ten is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Deuce is 0.0057971014492754 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Four is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Ten Deuce Four is 0.413567423476434 with 8 of them in the remaining 46
+Calling highOdds from setPublicOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Aces in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Trips in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Queens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Sixs in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Eights in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Sevens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting one of the 8 Ten Deuce Four   in the remaining 46 is 0.452339369427355
+highOdds: chance of making a pair therefore is 0.452339369427355 - 0.286460152587559  = 0.165879216839795!
+Back from highOdds in setPublicOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.03
+Base odds for 4: 0.02
+Base odds for 5: 0.04
+Base odds for 6: 0.22
+Base odds for 7: 0.41
+Base odds for 8: 0.17
+Pre-Adjustment total odds are: 0.90
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.03
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.04
+Normalised odds for 6: 0.22
+Normalised odds for 7: 0.41
+Normalised odds for 8: 0.17
+Hand 3: 2 to a run of Six high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.00769230769230781 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Deuce is 0.00769230769230781 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Four is 0.0218623481781374 with 3 of them in the remaining 40
+PairOdds: chance of making pair of Ten Deuce Four is 0.417901302111832 with 7 of them in the remaining 40
+trip odds are: 0.0372469635627531, pair odds are: 0.417901302111832, and house odds are therefore: 0.0155655545725865
+Hand 3: 2 to a run of Six high
+TripOdds: chance of making Trip of single card: Ten is 0.00769230769230781 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Deuce is 0.00769230769230781 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Four is 0.0218623481781374 with 3 of them in the remaining 40
+PairOdds: chance of making pair of Ten Deuce Four is 0.417901302111832 with 7 of them in the remaining 40
+Calling highOdds from setRealOdds
+highOdds: chance of not getting one of the 7 Ten Deuce Four   in the remaining 40 is 0.447751395119821
+highOdds: chance of making a pair therefore is 0.447751395119821 - 0.287777656198711  = 0.15997373892111!
+Back from highOdds in setRealOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.02
+Base odds for 4: 0.01
+Base odds for 5: 0.04
+Base odds for 6: 0.22
+Base odds for 7: 0.42
+Base odds for 8: 0.16
+Pre-Adjustment total odds are: 0.89
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.02
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.04
+Normalised odds for 6: 0.22
+Normalised odds for 7: 0.42
+Normalised odds for 8: 0.16
+Post-Adjustment total odds are: 0.85
+Check setRealOdds-BELOW: total odds are well below what they should be: 0.850127081278302. On 3 street
+Post-Adjustment total odds are: 0.85
+Hand 4: 2 to a run of Queen high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.0057971014492754 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Trip is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Eight is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Ten Trip Eight is 0.413567423476434 with 8 of them in the remaining 46
+trip odds are: 0.038998682476944, pair odds are: 0.413567423476434, and house odds are therefore: 0.0161285846309653
+Hand 4: 2 to a run of Queen high
+TripOdds: chance of making Trip of single card: Ten is 0.0057971014492754 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Trip is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Eight is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Ten Trip Eight is 0.413567423476434 with 8 of them in the remaining 46
+Calling highOdds from setOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Aces in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Deuces in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Queens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Sixs in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Fours in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Sevens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting one of the 8 Ten Trip Eight   in the remaining 46 is 0.452339369427355
+highOdds: chance of making a pair therefore is 0.452339369427355 - 0.286460152587559  = 0.165879216839795!
+Back from highOdds in setOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.04
+Base odds for 4: 0.02
+Base odds for 5: 0.04
+Base odds for 6: 0.22
+Base odds for 7: 0.41
+Base odds for 8: 0.17
+Pre-Adjustment total odds are: 0.91
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.04
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.04
+Normalised odds for 6: 0.22
+Normalised odds for 7: 0.41
+Normalised odds for 8: 0.17
+Post-Adjustment total odds are: 0.85
+Check setOdds-BELOW: total odds are well below what they should be: 0.851142631990031. On 3 street
+Hand 4: 2 to a run of Queen high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.0057971014492754 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Trip is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Eight is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Ten Trip Eight is 0.413567423476434 with 8 of them in the remaining 46
+trip odds are: 0.038998682476944, pair odds are: 0.413567423476434, and house odds are therefore: 0.0161285846309653
+Hand 4: 2 to a run of Queen high
+TripOdds: chance of making Trip of single card: Ten is 0.0057971014492754 with 2 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Trip is 0.0166007905138343 with 3 of them in the remaining 46
+TripOdds: chance of making Trip of single card: Eight is 0.0166007905138343 with 3 of them in the remaining 46
+PairOdds: chance of making pair of Ten Trip Eight is 0.413567423476434 with 8 of them in the remaining 46
+Calling highOdds from setPublicOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Aces in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 3 Deuces in the remaining 46 in 4 is 0.0166007905138343
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Queens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Sixs in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Fours in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting a pair of the 4 Sevens in the remaining 46 in 4 is 0.0316573214449863
+highOdds: chance of not getting one of the 8 Ten Trip Eight   in the remaining 46 is 0.452339369427355
+highOdds: chance of making a pair therefore is 0.452339369427355 - 0.286460152587559  = 0.165879216839795!
+Back from highOdds in setPublicOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.04
+Base odds for 4: 0.02
+Base odds for 5: 0.04
+Base odds for 6: 0.22
+Base odds for 7: 0.41
+Base odds for 8: 0.17
+Pre-Adjustment total odds are: 0.91
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.04
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.04
+Normalised odds for 6: 0.22
+Normalised odds for 7: 0.41
+Normalised odds for 8: 0.17
+Hand 4: 2 to a run of Queen high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.00769230769230781 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Trip is 0.0218623481781374 with 3 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Eight is 0.0218623481781374 with 3 of them in the remaining 40
+PairOdds: chance of making pair of Ten Trip Eight is 0.434183171025278 with 8 of them in the remaining 40
+trip odds are: 0.0514170040485827, pair odds are: 0.434183171025278, and house odds are therefore: 0.0223243978624332
+Hand 4: 2 to a run of Queen high
+TripOdds: chance of making Trip of single card: Ten is 0.00769230769230781 with 2 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Trip is 0.0218623481781374 with 3 of them in the remaining 40
+TripOdds: chance of making Trip of single card: Eight is 0.0218623481781374 with 3 of them in the remaining 40
+PairOdds: chance of making pair of Ten Trip Eight is 0.434183171025278 with 8 of them in the remaining 40
+Calling highOdds from setRealOdds
+highOdds: chance of not getting one of the 8 Ten Trip Eight   in the remaining 40 is 0.393478498741658
+highOdds: chance of making a pair therefore is 0.393478498741658 - 0.273607615712882  = 0.119870883028777!
+Back from highOdds in setRealOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.02
+Base odds for 3: 0.03
+Base odds for 4: 0.02
+Base odds for 5: 0.05
+Base odds for 6: 0.27
+Base odds for 7: 0.43
+Base odds for 8: 0.12
+Pre-Adjustment total odds are: 0.95
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.02
+Normalised odds for 3: 0.03
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.05
+Normalised odds for 6: 0.27
+Normalised odds for 7: 0.43
+Normalised odds for 8: 0.12
+Post-Adjustment total odds are: 0.90
+Check setRealOdds-BELOW: total odds are well below what they should be: 0.897825957051052. On 3 street
+Post-Adjustment total odds are: 0.90
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 1
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 1
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 1
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Seven of Hearts 6 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 2
+Updating matches for key Ten with value: 0
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 1
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Seven of Spades 45 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 1
+Updating matches for key Trip with value: 0
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 1
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 1
+Updating matches for key Eight with value: 0
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Seven of Diamonds 19 
+
+Updating matches for key Nine with value: 0
+Updating matches for key Ace with value: 0
+Updating matches for key Ten with value: 1
+Updating matches for key Trip with value: 1
+Updating matches for key King with value: 0
+Updating matches for key Deuce with value: 0
+Updating matches for key Five with value: 0
+Updating matches for key Queen with value: 0
+Updating matches for key Jack with value: 0
+Updating matches for key Six with value: 0
+Updating matches for key Four with value: 0
+Updating matches for key Eight with value: 1
+Updating matches for key Seven with value: 0
+Added card DeckOfCards.Card
+Ace of Hearts 0 
+
+Hand 1: 2 to a run of Ten high
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 1: 2 to a run of Ten high
+Hand 1: 2 to a run of Ten high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Deuce is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Queen is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Six is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+PairOdds: chance of making pair of Deuce Queen Six Seven is 0.43205574912892 with 10 of them in the remaining 42
+trip odds are: 0.0305749128919859, pair odds are: 0.43205574912892, and house odds are therefore: 0.0132100668940984
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 1: 2 to a run of Ten high
+Hand 1: 2 to a run of Ten high
+TripOdds: chance of making Trip of single card: Deuce is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Queen is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Six is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+PairOdds: chance of making pair of Deuce Queen Six Seven is 0.43205574912892 with 10 of them in the remaining 42
+Calling highOdds from setOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 2 Aces in the remaining 42 in 3 is 0.00348432055749128
+highOdds: chance of not getting a pair of the 3 Tens in the remaining 42 in 3 is 0.010191637630662
+highOdds: chance of not getting a pair of the 4 Trips in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Fours in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 3 Eights in the remaining 42 in 3 is 0.010191637630662
+highOdds: chance of not getting one of the 10 Deuce Queen Six Seven   in the remaining 42 is 0.432055749128921
+highOdds: chance of making a pair therefore is 0.432055749128921 - 0.143031358885021  = 0.289024390243901!
+Back from highOdds in setOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.01
+Base odds for 4: 0.01
+Base odds for 5: 0.03
+Base odds for 6: 0.18
+Base odds for 7: 0.43
+Base odds for 8: 0.29
+Pre-Adjustment total odds are: 0.96
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.03
+Normalised odds for 6: 0.18
+Normalised odds for 7: 0.43
+Normalised odds for 8: 0.29
+Post-Adjustment total odds are: 0.94
+Check setOdds-BELOW: total odds are well below what they should be: 0.942203812964435. On 4 street
+Hand 1: 2 to a run of Ten high
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 1: 2 to a run of Ten high
+Hand 1: 2 to a run of Ten high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Deuce is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Queen is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Six is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+PairOdds: chance of making pair of Deuce Queen Six Seven is 0.43205574912892 with 10 of them in the remaining 42
+trip odds are: 0.0305749128919859, pair odds are: 0.43205574912892, and house odds are therefore: 0.0132100668940984
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 1: 2 to a run of Ten high
+Hand 1: 2 to a run of Ten high
+TripOdds: chance of making Trip of single card: Deuce is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Queen is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Six is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+PairOdds: chance of making pair of Deuce Queen Six Seven is 0.43205574912892 with 10 of them in the remaining 42
+Calling highOdds from setPublicOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 2 Aces in the remaining 42 in 3 is 0.00348432055749128
+highOdds: chance of not getting a pair of the 3 Tens in the remaining 42 in 3 is 0.010191637630662
+highOdds: chance of not getting a pair of the 4 Trips in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Fours in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 3 Eights in the remaining 42 in 3 is 0.010191637630662
+highOdds: chance of not getting one of the 10 Deuce Queen Six Seven   in the remaining 42 is 0.432055749128921
+highOdds: chance of making a pair therefore is 0.432055749128921 - 0.143031358885021  = 0.289024390243901!
+Back from highOdds in setPublicOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.01
+Base odds for 4: 0.01
+Base odds for 5: 0.03
+Base odds for 6: 0.18
+Base odds for 7: 0.43
+Base odds for 8: 0.29
+Pre-Adjustment total odds are: 0.96
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.03
+Normalised odds for 6: 0.18
+Normalised odds for 7: 0.43
+Normalised odds for 8: 0.29
+Hand 1: 2 to a run of Ten high
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 1: 2 to a run of Ten high
+Hand 1: 2 to a run of Ten high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Deuce is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Queen is 0.0138655462184877 with 3 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Six is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 36
+PairOdds: chance of making pair of Deuce Queen Six Seven is 0.423529411764714 with 8 of them in the remaining 36
+trip odds are: 0.0233893557422971, pair odds are: 0.423529411764714, and house odds are therefore: 0.00990608007909072
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 1: 2 to a run of Ten high
+Hand 1: 2 to a run of Ten high
+TripOdds: chance of making Trip of single card: Deuce is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Queen is 0.0138655462184877 with 3 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Six is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 36
+PairOdds: chance of making pair of Deuce Queen Six Seven is 0.423529411764714 with 8 of them in the remaining 36
+Calling highOdds from setRealOdds
+highOdds: chance of not getting one of the 8 Deuce Queen Six Seven   in the remaining 36 is 0.458823529411774
+highOdds: chance of making a pair therefore is 0.458823529411774 - 0.153921568627454  = 0.30490196078432!
+Back from highOdds in setRealOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.02
+Base odds for 4: 0.01
+Base odds for 5: 0.02
+Base odds for 6: 0.16
+Base odds for 7: 0.42
+Base odds for 8: 0.30
+Pre-Adjustment total odds are: 0.95
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.02
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.02
+Normalised odds for 6: 0.16
+Normalised odds for 7: 0.42
+Normalised odds for 8: 0.30
+Post-Adjustment total odds are: 0.92
+Check setRealOdds-BELOW: total odds are well below what they should be: 0.920054364635443. On 4 street
+Post-Adjustment total odds are: 0.92
+Hand 1: 2 to a run of Ten high
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 1. FlushablesUnseen Count Before: 10
+Hand: 1. FlushablesUnseen Count After: 10
+Hand: 1. FlushablesUnseen 1: Jack Hearts
+Hand: 1. FlushablesUnseen 2: Five Hearts
+Hand: 1. FlushablesUnseen 3: Ten Hearts
+Hand: 1. FlushablesUnseen 4: Trip Hearts
+Hand: 1. FlushablesUnseen 5: Queen Hearts
+Hand: 1. FlushablesUnseen 6: Six Hearts
+Hand: 1. FlushablesUnseen 7: Nine Hearts
+Hand: 1. FlushablesUnseen 8: Eight Hearts
+Hand: 1. FlushablesUnseen 9: King Hearts
+Hand: 1. FlushablesUnseen 10: Four Hearts
+FlushablesUndealt Count: 10
+FlushablesUndealt 1: Jack Hearts
+FlushablesUndealt 2: Five Hearts
+FlushablesUndealt 3: Ten Hearts
+FlushablesUndealt 4: Trip Hearts
+FlushablesUndealt 5: Queen Hearts
+FlushablesUndealt 6: Six Hearts
+FlushablesUndealt 7: Nine Hearts
+FlushablesUndealt 8: Eight Hearts
+FlushablesUndealt 9: King Hearts
+FlushablesUndealt 10: Four Hearts
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 1: 2 to a run of Ten high
+Hand 2: 2 to a run of Ten high
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 2: 2 to a run of Ten high
+Hand 2: 2 to a run of Ten high
+Entering fhOdds
+S1
+S1 0.0189335490293682
+S2
+S2 0.010191637630662
+S3
+S3 0.00270034843205576
+S1+S2+S3  0.0318255350920859
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 2: 2 to a run of Ten high
+Hand 2: 2 to a run of Ten high
+TripOdds: chance of making Trip of Paired card(s): Ace is 0.0714285714285718 with 1 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Six is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+Calling highOdds from setOdds
+Back from highOdds in setOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.03
+Base odds for 3: 0.01
+Base odds for 4: 0.01
+Base odds for 5: 0.08
+Base odds for 6: 0.24
+i is 7
+Base odds for 7: 1.00
+i is 8
+Base odds for 8: 1.00
+Pre-Adjustment total odds are: 0.38
+Reducing item 7 down from 1.0 to 0.62495035761447
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.03
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.08
+Normalised odds for 6: 0.24
+Normalised odds for 7: 0.62
+Normalised odds for 8: 0.00
+Post-Adjustment total odds are: 1.00
+Check setOdds-BINGO: TOTAL ODDS ARE IN THE ZONE!! odds are1.0. On 4 street
+Hand 2: 2 to a run of Ten high
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 2: 2 to a run of Ten high
+Hand 2: 2 to a run of Ten high
+Entering fhOdds
+S1
+S1 0.0189335490293682
+S2
+S2 0.010191637630662
+S3
+S3 0.00270034843205576
+S1+S2+S3  0.0318255350920859
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 2: 2 to a run of Ten high
+Hand 2: 2 to a run of Ten high
+TripOdds: chance of making Trip of Paired card(s): Ace is 0.0714285714285718 with 1 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Six is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+Calling highOdds from setPublicOdds
+Back from highOdds in setPublicOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.03
+Base odds for 3: 0.01
+Base odds for 4: 0.01
+Base odds for 5: 0.08
+Base odds for 6: 0.24
+i is 7
+Base odds for 7: 1.00
+i is 8
+Base odds for 8: 1.00
+Pre-Adjustment total odds are: 0.38
+Reducing item 7 down from 1.0 to 0.62495035761447
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.03
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.08
+Normalised odds for 6: 0.24
+Normalised odds for 7: 0.62
+Normalised odds for 8: 0.00
+Hand 2: 2 to a run of Ten high
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 2: 2 to a run of Ten high
+Hand 2: 2 to a run of Ten high
+Entering fhOdds
+S1
+S1 0.0200396825396825
+S2
+S2 0.00476190476190471
+S3
+S3 0.00280112044817931
+S1+S2+S3  0.0276027077497665
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 2: 2 to a run of Ten high
+Hand 2: 2 to a run of Ten high
+TripOdds: chance of making Trip of Paired card(s): Ace is 0.0833333333333334 with 1 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Six is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 36
+Calling highOdds from setRealOdds
+Back from highOdds in setRealOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.03
+Base odds for 3: 0.00
+Base odds for 4: 0.01
+Base odds for 5: 0.09
+Base odds for 6: 0.22
+i is 7
+Base odds for 7: 1.00
+i is 8
+Base odds for 8: 1.00
+Pre-Adjustment total odds are: 0.35
+Reducing item 7 down from 1.0 to 0.647816739317239
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.03
+Normalised odds for 3: 0.00
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.09
+Normalised odds for 6: 0.22
+Normalised odds for 7: 0.65
+Normalised odds for 8: 0.00
+Post-Adjustment total odds are: 1.00
+Check setRealOdds-BINGO: TOTAL ODDS ARE IN THE ZONE!! odds are1.0. On 4 street
+Post-Adjustment total odds are: 1.00
+Hand 2: 2 to a run of Ten high
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 2. FlushablesUnseen Count Before: 10
+Hand: 2. FlushablesUnseen Count After: 9
+Hand: 2. FlushablesUnseen 1: Queen Diamonds
+Hand: 2. FlushablesUnseen 2: Four Diamonds
+Hand: 2. FlushablesUnseen 3: Jack Diamonds
+Hand: 2. FlushablesUnseen 4: Eight Diamonds
+Hand: 2. FlushablesUnseen 5: Trip Diamonds
+Hand: 2. FlushablesUnseen 6: King Diamonds
+Hand: 2. FlushablesUnseen 7: Deuce Diamonds
+Hand: 2. FlushablesUnseen 8: Nine Diamonds
+Hand: 2. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 2: 2 to a run of Ten high
+Hand 3: 2 to a run of Jack high
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand 3: 2 to a run of Jack high
+Hand 3: 2 to a run of Jack high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Deuce is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Four is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+PairOdds: chance of making pair of Ten Deuce Four Seven is 0.413937282229973 with 9 of them in the remaining 42
+trip odds are: 0.0238675958188152, pair odds are: 0.413937282229973, and house odds are therefore: 0.00987968774660383
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand 3: 2 to a run of Jack high
+Hand 3: 2 to a run of Jack high
+TripOdds: chance of making Trip of single card: Ten is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Deuce is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Four is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+PairOdds: chance of making pair of Ten Deuce Four Seven is 0.413937282229973 with 9 of them in the remaining 42
+Calling highOdds from setOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 2 Aces in the remaining 42 in 3 is 0.00348432055749128
+highOdds: chance of not getting a pair of the 4 Trips in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Queens in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Sixs in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 3 Eights in the remaining 42 in 3 is 0.010191637630662
+highOdds: chance of not getting one of the 9 Ten Deuce Four Seven   in the remaining 42 is 0.475261324041816
+highOdds: chance of making a pair therefore is 0.475261324041816 - 0.15270034843206  = 0.322560975609756!
+Back from highOdds in setOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.10
+Base odds for 4: 0.01
+Base odds for 5: 0.02
+Base odds for 6: 0.15
+Base odds for 7: 0.41
+Base odds for 8: 0.32
+Pre-Adjustment total odds are: 1.03
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.10
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.02
+Normalised odds for 6: 0.15
+Normalised odds for 7: 0.41
+Normalised odds for 8: 0.32
+Post-Adjustment total odds are: 0.92
+Check setOdds-BELOW: total odds are well below what they should be: 0.919456818075487. On 4 street
+Hand 3: 2 to a run of Jack high
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand 3: 2 to a run of Jack high
+Hand 3: 2 to a run of Jack high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Deuce is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Four is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+PairOdds: chance of making pair of Ten Deuce Four Seven is 0.413937282229973 with 9 of them in the remaining 42
+trip odds are: 0.0238675958188152, pair odds are: 0.413937282229973, and house odds are therefore: 0.00987968774660383
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand 3: 2 to a run of Jack high
+Hand 3: 2 to a run of Jack high
+TripOdds: chance of making Trip of single card: Ten is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Deuce is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Four is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 42
+PairOdds: chance of making pair of Ten Deuce Four Seven is 0.413937282229973 with 9 of them in the remaining 42
+Calling highOdds from setPublicOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 2 Aces in the remaining 42 in 3 is 0.00348432055749128
+highOdds: chance of not getting a pair of the 4 Trips in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Queens in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Sixs in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 3 Eights in the remaining 42 in 3 is 0.010191637630662
+highOdds: chance of not getting one of the 9 Ten Deuce Four Seven   in the remaining 42 is 0.475261324041816
+highOdds: chance of making a pair therefore is 0.475261324041816 - 0.15270034843206  = 0.322560975609756!
+Back from highOdds in setPublicOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.10
+Base odds for 4: 0.01
+Base odds for 5: 0.02
+Base odds for 6: 0.15
+Base odds for 7: 0.41
+Base odds for 8: 0.32
+Pre-Adjustment total odds are: 1.03
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.10
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.02
+Normalised odds for 6: 0.15
+Normalised odds for 7: 0.41
+Normalised odds for 8: 0.32
+Hand 3: 2 to a run of Jack high
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand 3: 2 to a run of Jack high
+Hand 3: 2 to a run of Jack high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ten is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Deuce is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Four is 0.0138655462184877 with 3 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 36
+PairOdds: chance of making pair of Ten Deuce Four Seven is 0.423529411764714 with 8 of them in the remaining 36
+trip odds are: 0.0233893557422971, pair odds are: 0.423529411764714, and house odds are therefore: 0.00990608007909072
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand 3: 2 to a run of Jack high
+Hand 3: 2 to a run of Jack high
+TripOdds: chance of making Trip of single card: Ten is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Deuce is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Four is 0.0138655462184877 with 3 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Seven is 0.0 with 1 of them in the remaining 36
+PairOdds: chance of making pair of Ten Deuce Four Seven is 0.423529411764714 with 8 of them in the remaining 36
+Calling highOdds from setRealOdds
+highOdds: chance of not getting one of the 8 Ten Deuce Four Seven   in the remaining 36 is 0.458823529411774
+highOdds: chance of making a pair therefore is 0.458823529411774 - 0.153921568627454  = 0.30490196078432!
+Back from highOdds in setRealOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.09
+Base odds for 4: 0.02
+Base odds for 5: 0.02
+Base odds for 6: 0.16
+Base odds for 7: 0.42
+Base odds for 8: 0.30
+Pre-Adjustment total odds are: 1.02
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.09
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.02
+Normalised odds for 6: 0.16
+Normalised odds for 7: 0.42
+Normalised odds for 8: 0.30
+Post-Adjustment total odds are: 0.92
+Check setRealOdds-BELOW: total odds are well below what they should be: 0.921352598618179. On 4 street
+Post-Adjustment total odds are: 0.92
+Hand 3: 2 to a run of Jack high
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand: 3. FlushablesUnseen Count Before: 10
+Hand: 3. FlushablesUnseen Count After: 9
+Hand: 3. FlushablesUnseen 1: Queen Diamonds
+Hand: 3. FlushablesUnseen 2: Six Diamonds
+Hand: 3. FlushablesUnseen 3: Jack Diamonds
+Hand: 3. FlushablesUnseen 4: Eight Diamonds
+Hand: 3. FlushablesUnseen 5: Trip Diamonds
+Hand: 3. FlushablesUnseen 6: King Diamonds
+Hand: 3. FlushablesUnseen 7: Deuce Diamonds
+Hand: 3. FlushablesUnseen 8: Nine Diamonds
+Hand: 3. FlushablesUnseen 9: Five Diamonds
+FlushablesUndealt Count: 7
+FlushablesUndealt 1: Jack Diamonds
+FlushablesUndealt 2: Eight Diamonds
+FlushablesUndealt 3: Trip Diamonds
+FlushablesUndealt 4: King Diamonds
+FlushablesUndealt 5: Deuce Diamonds
+FlushablesUndealt 6: Nine Diamonds
+FlushablesUndealt 7: Five Diamonds
+Mostflush is 3 and it needs to be more than 1 for a flush to be on
+Hand 3: 2 to a run of Jack high
+Hand 4: 2 to a run of Ace high
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 4: 2 to a run of Ace high
+Hand 4: 2 to a run of Ace high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ace is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Ten is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Trip is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Eight is 0.010191637630662 with 3 of them in the remaining 42
+PairOdds: chance of making pair of Ace Ten Trip Eight is 0.43205574912892 with 10 of them in the remaining 42
+trip odds are: 0.0273519163763065, pair odds are: 0.43205574912892, and house odds are therefore: 0.0118175527200767
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 4: 2 to a run of Ace high
+Hand 4: 2 to a run of Ace high
+TripOdds: chance of making Trip of single card: Ace is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Ten is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Trip is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Eight is 0.010191637630662 with 3 of them in the remaining 42
+PairOdds: chance of making pair of Ace Ten Trip Eight is 0.43205574912892 with 10 of them in the remaining 42
+Calling highOdds from setOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 3 Deuces in the remaining 42 in 3 is 0.010191637630662
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Queens in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Sixs in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Fours in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 1 Sevens in the remaining 42 in 3 is 0.0
+highOdds: chance of not getting one of the 10 Ace Ten Trip Eight   in the remaining 42 is 0.432055749128921
+highOdds: chance of making a pair therefore is 0.432055749128921 - 0.149216027874568  = 0.282839721254353!
+Back from highOdds in setOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.01
+Base odds for 4: 0.01
+Base odds for 5: 0.03
+Base odds for 6: 0.18
+Base odds for 7: 0.43
+Base odds for 8: 0.28
+Pre-Adjustment total odds are: 0.96
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.03
+Normalised odds for 6: 0.18
+Normalised odds for 7: 0.43
+Normalised odds for 8: 0.28
+Post-Adjustment total odds are: 0.93
+Check setOdds-BELOW: total odds are well below what they should be: 0.931431750437037. On 4 street
+Hand 4: 2 to a run of Ace high
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 4: 2 to a run of Ace high
+Hand 4: 2 to a run of Ace high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ace is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Ten is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Trip is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Eight is 0.010191637630662 with 3 of them in the remaining 42
+PairOdds: chance of making pair of Ace Ten Trip Eight is 0.43205574912892 with 10 of them in the remaining 42
+trip odds are: 0.0273519163763065, pair odds are: 0.43205574912892, and house odds are therefore: 0.0118175527200767
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 4: 2 to a run of Ace high
+Hand 4: 2 to a run of Ace high
+TripOdds: chance of making Trip of single card: Ace is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Ten is 0.00348432055749128 with 2 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Trip is 0.010191637630662 with 3 of them in the remaining 42
+TripOdds: chance of making Trip of single card: Eight is 0.010191637630662 with 3 of them in the remaining 42
+PairOdds: chance of making pair of Ace Ten Trip Eight is 0.43205574912892 with 10 of them in the remaining 42
+Calling highOdds from setPublicOdds
+highOdds: chance of not getting a pair of the 4 Nines in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Kings in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 3 Deuces in the remaining 42 in 3 is 0.010191637630662
+highOdds: chance of not getting a pair of the 4 Fives in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Queens in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Jacks in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Sixs in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 4 Fours in the remaining 42 in 3 is 0.0198606271777009
+highOdds: chance of not getting a pair of the 1 Sevens in the remaining 42 in 3 is 0.0
+highOdds: chance of not getting one of the 10 Ace Ten Trip Eight   in the remaining 42 is 0.432055749128921
+highOdds: chance of making a pair therefore is 0.432055749128921 - 0.149216027874568  = 0.282839721254353!
+Back from highOdds in setPublicOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.01
+Base odds for 4: 0.01
+Base odds for 5: 0.03
+Base odds for 6: 0.18
+Base odds for 7: 0.43
+Base odds for 8: 0.28
+Pre-Adjustment total odds are: 0.96
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.01
+Normalised odds for 5: 0.03
+Normalised odds for 6: 0.18
+Normalised odds for 7: 0.43
+Normalised odds for 8: 0.28
+Hand 4: 2 to a run of Ace high
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 4: 2 to a run of Ace high
+Hand 4: 2 to a run of Ace high
+Entering fhOdds
+TripOdds: chance of making Trip of single card: Ace is 0.0 with 1 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Ten is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Trip is 0.0138655462184877 with 3 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Eight is 0.0138655462184877 with 3 of them in the remaining 36
+PairOdds: chance of making pair of Ace Ten Trip Eight is 0.442436974789919 with 9 of them in the remaining 36
+trip odds are: 0.03249299719888, pair odds are: 0.442436974789919, and house odds are therefore: 0.0143761033825298
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 4: 2 to a run of Ace high
+Hand 4: 2 to a run of Ace high
+TripOdds: chance of making Trip of single card: Ace is 0.0 with 1 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Ten is 0.00476190476190471 with 2 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Trip is 0.0138655462184877 with 3 of them in the remaining 36
+TripOdds: chance of making Trip of single card: Eight is 0.0138655462184877 with 3 of them in the remaining 36
+PairOdds: chance of making pair of Ace Ten Trip Eight is 0.442436974789919 with 9 of them in the remaining 36
+Calling highOdds from setRealOdds
+highOdds: chance of not getting one of the 9 Ace Ten Trip Eight   in the remaining 36 is 0.409663865546221
+highOdds: chance of making a pair therefore is 0.409663865546221 - 0.144817927170871  = 0.26484593837535!
+Back from highOdds in setRealOdds
+Base odds for 0: 0.00
+Base odds for 1: 0.00
+Base odds for 2: 0.01
+Base odds for 3: 0.01
+Base odds for 4: 0.02
+Base odds for 5: 0.03
+Base odds for 6: 0.19
+Base odds for 7: 0.44
+Base odds for 8: 0.26
+Pre-Adjustment total odds are: 0.98
+Normalised odds for 0: 0.00
+Normalised odds for 1: 0.00
+Normalised odds for 2: 0.01
+Normalised odds for 3: 0.01
+Normalised odds for 4: 0.02
+Normalised odds for 5: 0.03
+Normalised odds for 6: 0.19
+Normalised odds for 7: 0.44
+Normalised odds for 8: 0.26
+Post-Adjustment total odds are: 0.95
+Check setRealOdds-BELOW: total odds are well below what they should be: 0.94749079180275. On 4 street
+Post-Adjustment total odds are: 0.95
+Hand 4: 2 to a run of Ace high
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand: 4. FlushablesUnseen Count Before: 13
+Hand: 4. FlushablesUnseen Count After: 11
+Hand: 4. FlushablesUnseen 1: Ace Clubs
+Hand: 4. FlushablesUnseen 2: Six Clubs
+Hand: 4. FlushablesUnseen 3: Queen Clubs
+Hand: 4. FlushablesUnseen 4: Four Clubs
+Hand: 4. FlushablesUnseen 5: Eight Clubs
+Hand: 4. FlushablesUnseen 6: Nine Clubs
+Hand: 4. FlushablesUnseen 7: Seven Clubs
+Hand: 4. FlushablesUnseen 8: Jack Clubs
+Hand: 4. FlushablesUnseen 9: Deuce Clubs
+Hand: 4. FlushablesUnseen 10: King Clubs
+Hand: 4. FlushablesUnseen 11: Five Clubs
+FlushablesUndealt Count: 9
+FlushablesUndealt 1: Queen Clubs
+FlushablesUndealt 2: Four Clubs
+FlushablesUndealt 3: Eight Clubs
+FlushablesUndealt 4: Nine Clubs
+FlushablesUndealt 5: Seven Clubs
+FlushablesUndealt 6: Jack Clubs
+FlushablesUndealt 7: Deuce Clubs
+FlushablesUndealt 8: King Clubs
+FlushablesUndealt 9: Five Clubs
+Mostflush is 2 and it needs to be more than 1 for a flush to be on
+Hand 4: 2 to a run of Ace high

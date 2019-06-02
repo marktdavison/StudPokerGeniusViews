@@ -1,0 +1,53 @@
+LineID, Player, Card No, Function, Sub-function, Analysis, Target Cards, Draws Left, Targets in pack, Cards Left, Needed, Result
+Odds Record,2,3,HighOdds,Zeros,Private, Nines, 4, 3, 46,2, 0.02%
+Odds Record,2,3,HighOdds,Zeros,Private, Aces, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Kings, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Deuces, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Fives, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Jacks, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Sixs, 4, 3, 46,2, 0.02%
+Odds Record,2,3,HighOdds,Zeros,Private, Fours, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Eights, 4, 3, 46,2, 0.02%
+Odds Record,2,3,HighOdds,Zeros,Private, Sevens, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Singles,Private, Any Pairs, 4, 37, 46,4, 0.40%
+Odds Record,2,3,HighOdds,Returned Value,Private, Overall, 4, Overall), 46,till the end, 0.13%
+Odds Record,2,3,HighOdds,Zeros,Private, Nines, 4, 3, 46,2, 0.02%
+Odds Record,2,3,HighOdds,Zeros,Private, Aces, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Kings, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Deuces, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Fives, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Jacks, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Sixs, 4, 3, 46,2, 0.02%
+Odds Record,2,3,HighOdds,Zeros,Private, Fours, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Zeros,Private, Eights, 4, 3, 46,2, 0.02%
+Odds Record,2,3,HighOdds,Zeros,Private, Sevens, 4, 4, 46,2, 0.03%
+Odds Record,2,3,HighOdds,Singles,Private, Any Pairs, 4, 37, 46,4, 0.40%
+Odds Record,2,3,HighOdds,Returned Value,Private, Overall, 4, Overall), 46,till the end, 0.13%
+Odds Record,2,3,HighOdds,Singles,Real, Any Pairs, 4, 32, 40,4, 0.39%
+Odds Record,2,3,HighOdds,Returned Value,Real, Overall, 4, Overall), 40,till the end, 0.13%
+Odds Record,3,3,HighOdds,Zeros,Private, Nines, 4, 3, 46,2, 0.02%
+Odds Record,3,3,HighOdds,Zeros,Private, Aces, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Tens, 4, 3, 46,2, 0.02%
+Odds Record,3,3,HighOdds,Zeros,Private, Trips, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Kings, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Deuces, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Jacks, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Sixs, 4, 3, 46,2, 0.02%
+Odds Record,3,3,HighOdds,Zeros,Private, Fours, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Sevens, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Singles,Private, Any Pairs, 4, 37, 46,4, 0.40%
+Odds Record,3,3,HighOdds,Returned Value,Private, Overall, 4, Overall), 46,till the end, 0.13%
+Odds Record,3,3,HighOdds,Zeros,Private, Nines, 4, 3, 46,2, 0.02%
+Odds Record,3,3,HighOdds,Zeros,Private, Aces, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Tens, 4, 3, 46,2, 0.02%
+Odds Record,3,3,HighOdds,Zeros,Private, Trips, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Kings, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Deuces, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Jacks, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Sixs, 4, 3, 46,2, 0.02%
+Odds Record,3,3,HighOdds,Zeros,Private, Fours, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Zeros,Private, Sevens, 4, 4, 46,2, 0.03%
+Odds Record,3,3,HighOdds,Singles,Private, Any Pairs, 4, 37, 46,4, 0.40%
+Odds Record,3,3,HighOdds,Returned Value,Private, Overall, 4, Overall), 46,till the end, 0.13%
+Odds Record,3,3,HighOdds,Singles,Real, Any Pairs, 4, 32, 40,4, 0.39%
+Odds Record,3,3,HighOdds,Returned Value,Real, Overall, 4, Overall), 40,till the end, 0.13%

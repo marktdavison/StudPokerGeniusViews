@@ -1,0 +1,13 @@
+LineID, Player, Card No, Function, Analysis, Face, Suit, Total%, SF%,Poker%,FH%,Flush%,Run%,Trips%,Two Pair%,Pair% High Card%
+Card Record,1,1,setOdds,Private,King, Clubs
+Card Record,1,2,setOdds,Private,King, Spades
+Card Record,1,3,setOdds,Private,Nine, Hearts,1.00%,0.00%,0.01%,0.06%,0.01%,0.02%,0.18%,0.23%,0.50%,0.00%
+Card Record,2,1,setOdds,Private,Trip, Hearts
+Card Record,2,2,setOdds,Private,Queen, Diamonds
+Card Record,2,3,setOdds,Private,Ten, Diamonds,0.89%,0.00%,0.00%,0.02%,0.03%,0.02%,0.05%,0.26%,0.43%,0.08%
+Card Record,3,1,setOdds,Private,Five, Spades
+Card Record,3,2,setOdds,Private,Queen, Hearts
+Card Record,3,3,setOdds,Private,Eight, Diamonds,0.89%,0.00%,0.00%,0.02%,0.01%,0.01%,0.05%,0.26%,0.43%,0.11%
+Card Record,4,1,setOdds,Private,Six, Spades
+Card Record,4,2,setOdds,Private,Deuce, Diamonds
+Card Record,4,3,setOdds,Private,Six, Clubs,1.00%,0.00%,0.01%,0.06%,0.01%,0.02%,0.18%,0.23%,0.50%,0.00%
