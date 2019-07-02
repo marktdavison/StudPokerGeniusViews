@@ -359,7 +359,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     public func buildScreenObjects(anchors: [CGPoint]) -> [[UILabel]]{
         var wide = Int()
         var high = Int()
-        
+        print("BSO: Anchors \(anchors)")
         if game.inPortrait {
             wide = game.portraitWidth
             high = game.portraitHeight
@@ -1015,7 +1015,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         let sideMenu = SideMenu(menuWidth: CGFloat(150 * iPadMultiplier), menuItemTitles: normalMenuTitles, parentViewController: self)
         sideMenu.menuDelegate = self
         sideMenu.layer.zPosition = 1
-
+        populateBookieBoard()
     }
 
     
@@ -1148,6 +1148,10 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         }
         game.matchSetPublic.removeAll()
         game.matchSetReal.removeAll()
+        game.allCurrentHands.removeAll()
+        game.allBestHands.removeAll()
+        game.allLikelyHands.removeAll()
+        
         
   //      print("remove")
     //    game.myDeckOfCards.deck.removeAll()
@@ -2084,8 +2088,31 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         }
     }
    
-    
-
+//    public var currentLeaders = [[String]]()
+//    public var predictedLeaders = [[String]]()
+//
+//    public func genCurrentLeaders() -> ([[String]]){
+//        var i = 0
+//        for p in allPlayers {
+//            currentLeaders[i][0] = p.playerName
+//            currentLeaders[i][1] = p.playerHand.currentActualHandString
+//            currentLeaders[i][2] = p.playerHand.handProb
+//            i = i+1
+//        }
+//
+//        return
+//    }
+//
+//    public func genPredictedLeaders() -> ([[String]]){
+//        var i = 0
+//        for p in allPlayers {
+//            currentLeaders[i][0] = p.playerName
+//            currentLeaders[i][1] = p.playerHand.bestHandString
+//            i = i+1
+//        }
+//
+//        return
+//    }
     
     
     @IBAction func unwindToMainVC(seg: UIStoryboardSegue!) {
@@ -2141,6 +2168,19 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         } */
     }
 
+    @IBAction func zap(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let lvc = sb.instantiateViewController(withIdentifier: "Overlay2") as! LeadersViewController
+        transitioningDelegate = transitionDelegate
+        lvc.transitioningDelegate = transitionDelegate
+        lvc.modalPresentationStyle = .custom
+        //     ovc.preferredContentSize = CGSize(200, 100)
+        //   ovc.modalTransitionStyle = .flipHorizontal
+     //   let hand = allPlayers[0].playerHand
+        self.present(lvc, animated: true, completion: nil)
+    //    lvc.handItem = hand
+        
+    }
     
     override public func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         print("Which comes first - traitcollection will transition?")
@@ -2159,6 +2199,161 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             moveScreenObjectsToPortrait(anchors: anchorsP)
         }
     }
+    
+    
+    @IBOutlet weak var p1Name: UILabel!
+    
+    
+    @IBOutlet weak var p1Odds: UILabel!
+    
+    
+    
+    @IBAction func p1Stake(_ sender: Any) {
+        print("Wibble")
+        
+    }
+    
+    
+    @IBOutlet weak var p2Player: UILabel!
+    
+    @IBOutlet weak var p2Odds: UILabel!
+    
+    @IBAction func p2Stake(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var p3Player: UILabel!
+    
+    
+    @IBOutlet weak var p3Odds: UILabel!
+    
+    @IBAction func p3Stake(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var p4Player: UILabel!
+    
+    @IBOutlet weak var p4Odds: UILabel!
+    
+    @IBAction func p4Stake(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var p5Player: UILabel!
+    
+    @IBOutlet weak var p5Odds: UILabel!
+    
+    @IBAction func p5Stake(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var p6Player: UILabel!
+    
+    @IBOutlet weak var p6Odds: UILabel!
+    
+    @IBAction func p6Stake(_ sender: Any) {
+    }
+    
+    public func populateBookieBoard() {
+        var oddsDefault = "5/1"
+ 
+        print("PBB: All. \(game.playerNames)")
+        switch game.street {
+        case 3:
+            oddsDefault = "5/1"
+        case 4:
+            oddsDefault = "4/1"
+        case 5:
+            oddsDefault = "3/1"
+        case 6:
+            oddsDefault = "2/1"
+        case 7:
+            oddsDefault = "1/1"
+        default:
+            oddsDefault = "5/1"
+        }
+        
+        switch game.players {
+        case 2:
+            print("PBB: 1. \(game.playerNames[0]) and 2. \(game.playerNames[1])")
+            p1Name.text = "1. " + game.playerNames[0]
+            p2Player.text = "2. " + game.playerNames[1]
+            p1Odds.text = oddsDefault
+            p2Odds.text = oddsDefault
+            p3Odds.text = " -   - "
+            p4Odds.text = " -   - "
+            p5Odds.text = " -   - "
+            p6Odds.text = " -   - "
+            
+        case 3:
+            print("PBB: 3. \(game.playerNames[2])")
+
+            p1Name.text = "1. " + game.playerNames[0]
+            p2Player.text = "2. " + game.playerNames[1]
+            p3Player.text = "3. " + game.playerNames[2]
+            
+            p1Odds.text = oddsDefault
+            p2Odds.text = oddsDefault
+            p3Odds.text = oddsDefault
+            p4Odds.text = " -   - "
+            p5Odds.text = " -   - "
+            p6Odds.text = " -   - "
+        case 4:
+            print("PBB: 4. \(game.playerNames[3])")
+
+            p1Name.text = "1. " + game.playerNames[0]
+            p2Player.text = "2. " + game.playerNames[1]
+            p3Player.text = "3. " + game.playerNames[2]
+            p4Player.text = "4. " + game.playerNames[3]
+            p1Odds.text = oddsDefault
+            p2Odds.text = oddsDefault
+            p3Odds.text = oddsDefault
+            p4Odds.text = oddsDefault
+            p5Odds.text = " -   - "
+            p6Odds.text = " -   - "
+        case 5:
+            print("PBB: 5. \(game.playerNames[4])")
+
+            p1Name.text = "1. " + game.playerNames[0]
+            p2Player.text = "2. " + game.playerNames[1]
+            p3Player.text = "3. " + game.playerNames[2]
+            p4Player.text = "4. " + game.playerNames[3]
+            p5Player.text = "5. " + game.playerNames[4]
+            p1Odds.text = oddsDefault
+            p2Odds.text = oddsDefault
+            p3Odds.text = oddsDefault
+            p4Odds.text = oddsDefault
+            p5Odds.text = oddsDefault
+            p6Odds.text = " -   - "
+        case 6:
+            print("PBB: 6. \(game.playerNames[5])")
+
+            p1Name.text = "1. " + game.playerNames[0]
+            p2Player.text = "2. " + game.playerNames[1]
+            p3Player.text = "3. " + game.playerNames[2]
+            p4Player.text = "4. " + game.playerNames[3]
+            p5Player.text = "5. " + game.playerNames[4]
+            p6Player.text = "6. " + game.playerNames[5]
+            p1Odds.text = oddsDefault
+            p2Odds.text = oddsDefault
+            p3Odds.text = oddsDefault
+            p4Odds.text = oddsDefault
+            p5Odds.text = oddsDefault
+            p6Odds.text = oddsDefault
+        default:
+        
+            p1Name.text = "1. " + game.playerNames[0]
+            p2Player.text = "2. " + game.playerNames[1]
+            
+        }
+        
+
+        
+
+ 
+        
+        
+    }
+    
+    
+    
+    
 }
 
 
