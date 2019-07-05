@@ -2277,17 +2277,6 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3a-hi-dzi">
-                                <rect key="frame" x="264" y="24" width="40" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="zap">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="zap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MW8-T3-ARY"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7X-OF-fPI">
                                 <rect key="frame" x="32" y="56" width="260" height="200"/>
                                 <subviews>
@@ -2476,7 +2465,21 @@
                                     <constraint firstItem="fpf-wL-7wk" firstAttribute="top" secondItem="J7X-OF-fPI" secondAttribute="top" id="pXc-BQ-FB4"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3a-hi-dzi">
+                                <rect key="frame" x="145" y="269" width="30" height="30"/>
+                                <state key="normal" title="zap">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="zap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MW8-T3-ARY"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="s3a-hi-dzi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wib-yN-tN9"/>
+                            <constraint firstItem="s3a-hi-dzi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fLT-84-hy6"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="P6Player" destination="vVd-d2-eXG" id="AyO-hh-aXC"/>
