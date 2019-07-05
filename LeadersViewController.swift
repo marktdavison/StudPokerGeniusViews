@@ -28,7 +28,7 @@ class LeadersViewController: UIViewController {
         selectedBoard = game.allCurrentHands
         setBoardSelection(board: "Now")
         setStreetSelection(street: game.street)
-        print("lvc: Street is \(game.street)")
+        print("lvc: this one is for github Street is \(game.street)")
         let sortedBoard = sortLeaders(handsIn: selectedBoard)
         buildLeaderLabels(labelNo: sortedBoard.count)
         writeLeaderLabels(board: sortedBoard)

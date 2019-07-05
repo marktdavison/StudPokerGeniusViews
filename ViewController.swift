@@ -678,13 +678,13 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
 
     //    print("Dimensions of this screen: Height \(self.view.bounds.height), Width \(self.view.bounds.width)... \(UIDevice).self.self")
         
-        if !starterAlreadyShown {
-            UIView.animate(withDuration: 2) {
-                self.starterLabel.text = self.starterLabel.text! + "\n\nSwipe Right to reveal the menu or press Shuffle and Deal to start a new game."
-                self.starterLabel.alpha = 1
-                self.starterAlreadyShown = true
-            }
-        }
+//        if !starterAlreadyShown {
+//            UIView.animate(withDuration: 2) {
+//                self.starterLabel.text = self.starterLabel.text! + "\n\nSwipe Right to reveal the menu or press Shuffle and Deal to start a new game."
+//                self.starterLabel.alpha = 1
+//                self.starterAlreadyShown = true
+//            }
+//        }
         let hideOddsOnScreenObject = UserDefaults.standard.object(forKey: "mainScreenOddsHidden")
         if let hideOddsOnMainScreen = hideOddsOnScreenObject as? Bool {
             game.mainScreenOddsHidden = hideOddsOnMainScreen
