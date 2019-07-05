@@ -25,6 +25,10 @@ class LeadersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         selectedStreet = game.street
+        if selectedStreet < 3 {
+            print("Too early for this")
+            return
+        }
         selectedBoard = game.allCurrentHands
         setBoardSelection(board: "Now")
         setStreetSelection(street: game.street)
