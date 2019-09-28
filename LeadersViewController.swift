@@ -214,6 +214,7 @@ class LeadersViewController: UIViewController {
     @IBAction func close(_ sender: Any) {
         print("LVC: tidying up now")
         leaderLabels.removeAll()
+        game.bookieBoard.alpha = 1
     }
     
     

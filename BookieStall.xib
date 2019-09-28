@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="StudPokerGenius" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB" customClass="BookieView" customModule="StudPokerGenius" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="275"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitofwood" translatesAutoresizingMaskIntoConstraints="NO" id="qc4-Cb-osJ">
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="275"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session:     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEi-sX-Nc8">
+                    <rect key="frame" x="24" y="247" width="69" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="JMu-QY-kiX"/>
+                        <constraint firstAttribute="height" constant="16" id="hNy-A5-gau"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game:     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5H-IB-gB6">
+                    <rect key="frame" x="108" y="247" width="58" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="3Tl-gn-SgV"/>
+                        <constraint firstAttribute="height" constant="16" id="69o-Jk-A7n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card:     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwF-ci-cve">
+                    <rect key="frame" x="174" y="247" width="58" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="RYy-gl-SN7"/>
+                        <constraint firstAttribute="width" constant="58" id="SHp-vR-lyw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player               Odds        Stake    To Win     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tH-kq-IAN">
+                    <rect key="frame" x="24" y="39" width="306" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="F6t-xe-Nlg"/>
+                        <constraint firstAttribute="width" constant="306" id="aQI-Bd-aRU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DQr-kZ-y1c">
+                    <rect key="frame" x="24" y="58" width="302" height="179"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-3d-xm7">
+                            <rect key="frame" x="0.0" y="0.0" width="302" height="24"/>
+                            <subviews>
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJK-ly-gVm">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="JtM-Yz-yOV"/>
+                                        <constraint firstAttribute="width" constant="90" id="oTa-Q1-dql"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10/1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pl7-lI-PqG">
+                                    <rect key="frame" x="98" y="0.0" width="62" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="62" id="R2M-lH-xRB"/>
+                                        <constraint firstAttribute="height" constant="24" id="UVW-zk-KiS"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhJ-vL-9Az">
+                                    <rect key="frame" x="168" y="0.0" width="52" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="aBM-gf-1T7"/>
+                                        <constraint firstAttribute="width" constant="52" id="ci3-AJ-cV8"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                    <connections>
+                                        <action selector="enterStake:" destination="iN0-l3-epB" eventType="editingDidEnd" id="1GJ-QN-x9c"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbl-vx-7Vp">
+                                    <rect key="frame" x="228" y="0.0" width="74" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="74" id="1VN-aD-pb3"/>
+                                        <constraint firstAttribute="height" constant="24" id="LN1-CQ-dth"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="wSk-Pf-1sx"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-8O-YCl">
+                            <rect key="frame" x="0.0" y="31" width="302" height="24"/>
+                            <subviews>
+                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ym9-86-Aup">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="PnP-31-zEx"/>
+                                        <constraint firstAttribute="width" constant="90" id="dqU-VT-DcI"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10/1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vs4-Fn-Ef6">
+                                    <rect key="frame" x="98" y="0.0" width="62" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="62" id="JOl-sN-0cz"/>
+                                        <constraint firstAttribute="height" constant="24" id="eYs-ow-v3z"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RVW-Ce-REg">
+                                    <rect key="frame" x="168" y="0.0" width="52" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="52" id="f2m-qr-Kz4"/>
+                                        <constraint firstAttribute="height" constant="24" id="tj5-fJ-0ct"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                    <connections>
+                                        <action selector="enterStake:" destination="iN0-l3-epB" eventType="editingDidEnd" id="fov-dj-InY"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eeK-7e-MyF">
+                                    <rect key="frame" x="228" y="0.0" width="74" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="Nvt-Gk-MSX"/>
+                                        <constraint firstAttribute="width" constant="74" id="Zod-fR-mC0"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="FdI-lR-cvE"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6qi-rx-1Ho">
+                            <rect key="frame" x="0.0" y="62" width="302" height="24"/>
+                            <subviews>
+                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player 3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6X7-ES-Taa">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="90" id="97W-Jk-ebZ"/>
+                                        <constraint firstAttribute="height" constant="24" id="T9S-Op-4oa"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10/1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JOl-nf-qSk">
+                                    <rect key="frame" x="98" y="0.0" width="62" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="GTM-3g-MkR"/>
+                                        <constraint firstAttribute="width" constant="62" id="u3h-XU-95X"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cja-ls-LzN">
+                                    <rect key="frame" x="168" y="0.0" width="52" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="aJb-nI-L6b"/>
+                                        <constraint firstAttribute="width" constant="52" id="poo-Uy-Uiq"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                    <connections>
+                                        <action selector="enterStake:" destination="iN0-l3-epB" eventType="editingDidEnd" id="9YT-OP-c89"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qiG-PI-Ihl">
+                                    <rect key="frame" x="228" y="0.0" width="74" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="74" id="Gcy-Mq-VsE"/>
+                                        <constraint firstAttribute="height" constant="24" id="spk-aF-UuL"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="iBl-Ml-9OH"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oZe-qp-oo4">
+                            <rect key="frame" x="0.0" y="93" width="302" height="24"/>
+                            <subviews>
+                                <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player 4" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDW-Rt-EHo">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="Iah-y0-bxu"/>
+                                        <constraint firstAttribute="width" constant="90" id="uMD-iy-wKf"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10/1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hnx-qj-4QL">
+                                    <rect key="frame" x="98" y="0.0" width="62" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="62" id="V2O-fl-jmy"/>
+                                        <constraint firstAttribute="height" constant="24" id="iSK-P0-Xpp"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LlB-s2-eCi">
+                                    <rect key="frame" x="168" y="0.0" width="52" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="52" id="F99-xR-RJ3"/>
+                                        <constraint firstAttribute="height" constant="24" id="rxh-Dg-NXI"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                    <connections>
+                                        <action selector="enterStake:" destination="iN0-l3-epB" eventType="editingDidEnd" id="8be-SU-0io"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EaS-9j-2FY">
+                                    <rect key="frame" x="228" y="0.0" width="74" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="Nvw-kD-IDu"/>
+                                        <constraint firstAttribute="width" constant="74" id="bLf-5N-XaM"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="OL3-Nv-1Zj"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1u8-ml-20q">
+                            <rect key="frame" x="0.0" y="124" width="302" height="24"/>
+                            <subviews>
+                                <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player 5" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ieO-w5-z4s">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="90" id="fOO-mC-S0e"/>
+                                        <constraint firstAttribute="height" constant="24" id="wdT-dO-wPe"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10/1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZME-gn-O6v">
+                                    <rect key="frame" x="98" y="0.0" width="62" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="62" id="R68-dS-tJr"/>
+                                        <constraint firstAttribute="height" constant="24" id="vT3-Qz-cX9"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPi-at-FV1">
+                                    <rect key="frame" x="168" y="0.0" width="52" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="6t9-iE-NEX"/>
+                                        <constraint firstAttribute="width" constant="52" id="FTV-KG-oEz"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                    <connections>
+                                        <action selector="enterStake:" destination="iN0-l3-epB" eventType="editingDidEnd" id="kmt-6i-qH0"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFa-ac-Fsi">
+                                    <rect key="frame" x="228" y="0.0" width="74" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="74" id="InN-4h-mtp"/>
+                                        <constraint firstAttribute="height" constant="24" id="ov5-IN-kT7"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="w5a-UD-Poo"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4eO-Wx-jq6">
+                            <rect key="frame" x="0.0" y="155" width="302" height="24"/>
+                            <subviews>
+                                <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player 6" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rQ8-tS-0jJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="90" id="Q1e-cQ-DzG"/>
+                                        <constraint firstAttribute="height" constant="24" id="svw-Id-1LP"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10/1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSC-Ar-Z7v">
+                                    <rect key="frame" x="98" y="0.0" width="62" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="8Io-zA-Alc"/>
+                                        <constraint firstAttribute="width" constant="62" id="Dx9-zS-jHg"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zFH-MZ-BLr">
+                                    <rect key="frame" x="168" y="0.0" width="52" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="52" id="TD2-UJ-XXj"/>
+                                        <constraint firstAttribute="height" constant="24" id="ae9-IC-PkE"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                    <connections>
+                                        <action selector="enterStake:" destination="iN0-l3-epB" eventType="editingDidEnd" id="JHD-6f-Tg7"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ljI-14-tAJ">
+                                    <rect key="frame" x="228" y="0.0" width="74" height="24"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="74" id="asy-R8-SX5"/>
+                                        <constraint firstAttribute="height" constant="24" id="taM-Qs-agL"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="TV9-TT-YKG"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-JY-mGP">
+                    <rect key="frame" x="244" y="242" width="50" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Bet"/>
+                    <connections>
+                        <action selector="bluifytv:" destination="iN0-l3-epB" eventType="touchUpInside" id="9hV-1F-Z62"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who will win? Place a bet of up to $100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2X-xT-vyw">
+                    <rect key="frame" x="15" y="10" width="323" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="323" id="DI5-Q3-NVM"/>
+                        <constraint firstAttribute="height" constant="22" id="zKy-eF-s4m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JwF-ci-cve" secondAttribute="bottom" constant="12" id="6Ej-Qk-qhl"/>
+                <constraint firstItem="qc4-Cb-osJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BXb-Na-03q"/>
+                <constraint firstItem="JwF-ci-cve" firstAttribute="top" secondItem="DQr-kZ-y1c" secondAttribute="bottom" constant="10" id="I7L-ew-X46"/>
+                <constraint firstAttribute="bottom" secondItem="qc4-Cb-osJ" secondAttribute="bottom" id="IFS-nb-zjd"/>
+                <constraint firstItem="8tH-kq-IAN" firstAttribute="top" secondItem="c2X-xT-vyw" secondAttribute="bottom" constant="7" id="JCa-NZ-kwP"/>
+                <constraint firstAttribute="bottom" secondItem="xEi-sX-Nc8" secondAttribute="bottom" constant="12" id="KMV-vk-IJr"/>
+                <constraint firstItem="c2X-xT-vyw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="aLs-7C-FeL"/>
+                <constraint firstItem="xEi-sX-Nc8" firstAttribute="top" secondItem="DQr-kZ-y1c" secondAttribute="bottom" constant="10" id="cFQ-v5-POw"/>
+                <constraint firstItem="J5H-IB-gB6" firstAttribute="leading" secondItem="xEi-sX-Nc8" secondAttribute="trailing" constant="15" id="gOH-1x-Tfe"/>
+                <constraint firstItem="qc4-Cb-osJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gsj-cN-DGg"/>
+                <constraint firstItem="DQr-kZ-y1c" firstAttribute="top" secondItem="8tH-kq-IAN" secondAttribute="bottom" constant="1" id="ipc-qa-qTt"/>
+                <constraint firstItem="JwF-ci-cve" firstAttribute="leading" secondItem="J5H-IB-gB6" secondAttribute="trailing" constant="8" id="jXb-9F-lx3"/>
+                <constraint firstItem="J5H-IB-gB6" firstAttribute="top" secondItem="DQr-kZ-y1c" secondAttribute="bottom" constant="10" id="l7z-6E-DGd"/>
+                <constraint firstItem="qc4-Cb-osJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="qib-eq-Jxe"/>
+                <constraint firstItem="c2X-xT-vyw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="sxq-In-03x"/>
+                <constraint firstItem="xEi-sX-Nc8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="tbd-TO-SwN"/>
+                <constraint firstItem="8tH-kq-IAN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="ukg-Mo-YUk"/>
+                <constraint firstAttribute="trailing" secondItem="c2X-xT-vyw" secondAttribute="trailing" constant="12" id="wF8-mD-LGd"/>
+                <constraint firstAttribute="bottom" secondItem="J5H-IB-gB6" secondAttribute="bottom" constant="12" id="wlP-RH-LuO"/>
+                <constraint firstItem="DQr-kZ-y1c" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="yMP-jR-Ajx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="banner" destination="c2X-xT-vyw" id="m1u-yI-Hv7"/>
+                <outlet property="bluifyOutlet" destination="Obd-JY-mGP" id="pca-7h-MNY"/>
+                <outlet property="gameLabel" destination="J5H-IB-gB6" id="z6B-Ck-SMu"/>
+                <outlet property="mainSV" destination="DQr-kZ-y1c" id="gUw-Ip-S2k"/>
+                <outlet property="p1" destination="rJK-ly-gVm" id="CiI-i2-xvy"/>
+                <outlet property="p1Odds" destination="Pl7-lI-PqG" id="3kY-Hd-IjJ"/>
+                <outlet property="p1SV" destination="Uhs-3d-xm7" id="iC2-Um-IMh"/>
+                <outlet property="p1Stake" destination="UhJ-vL-9Az" id="JNd-dn-YFb"/>
+                <outlet property="p1Winnings" destination="jbl-vx-7Vp" id="9j9-zD-JZU"/>
+                <outlet property="p2" destination="ym9-86-Aup" id="mlQ-5E-gyb"/>
+                <outlet property="p2Odds" destination="vs4-Fn-Ef6" id="1Vz-ca-JuD"/>
+                <outlet property="p2SV" destination="Enk-8O-YCl" id="hsM-zD-55A"/>
+                <outlet property="p2Stake" destination="RVW-Ce-REg" id="nhy-Lz-67n"/>
+                <outlet property="p2Winnings" destination="eeK-7e-MyF" id="b51-XD-GBk"/>
+                <outlet property="p3" destination="6X7-ES-Taa" id="52W-16-5UV"/>
+                <outlet property="p3Odds" destination="JOl-nf-qSk" id="AlL-4g-k91"/>
+                <outlet property="p3SV" destination="6qi-rx-1Ho" id="CC0-o2-Scq"/>
+                <outlet property="p3Stake" destination="Cja-ls-LzN" id="xlD-cr-bi0"/>
+                <outlet property="p3Winnings" destination="qiG-PI-Ihl" id="xQf-8C-ubB"/>
+                <outlet property="p4" destination="VDW-Rt-EHo" id="LnD-gO-jqW"/>
+                <outlet property="p4Odds" destination="Hnx-qj-4QL" id="jyK-SO-So0"/>
+                <outlet property="p4SV" destination="oZe-qp-oo4" id="LS5-cX-X9W"/>
+                <outlet property="p4Stake" destination="LlB-s2-eCi" id="qQ7-TG-tim"/>
+                <outlet property="p4Winnings" destination="EaS-9j-2FY" id="n4i-Qe-aeJ"/>
+                <outlet property="p5" destination="ieO-w5-z4s" id="d3j-ie-Mdc"/>
+                <outlet property="p5Odds" destination="ZME-gn-O6v" id="k4x-Cp-447"/>
+                <outlet property="p5SV" destination="1u8-ml-20q" id="iEm-KS-uIe"/>
+                <outlet property="p5Stake" destination="xPi-at-FV1" id="aJF-kC-3Fg"/>
+                <outlet property="p5Winnings" destination="cFa-ac-Fsi" id="Srd-uF-JqK"/>
+                <outlet property="p6" destination="rQ8-tS-0jJ" id="R7v-t8-Mb7"/>
+                <outlet property="p6Odds" destination="VSC-Ar-Z7v" id="Ac8-17-u0H"/>
+                <outlet property="p6SV" destination="4eO-Wx-jq6" id="pNB-o3-pKg"/>
+                <outlet property="p6Stake" destination="zFH-MZ-BLr" id="JT0-Lb-DLE"/>
+                <outlet property="p6Winnings" destination="ljI-14-tAJ" id="58b-Di-HDx"/>
+                <outlet property="sessionLabel" destination="xEi-sX-Nc8" id="xMW-9H-lTv"/>
+                <outlet property="streetLabel" destination="JwF-ci-cve" id="4tw-vg-2qj"/>
+            </connections>
+            <point key="canvasLocation" x="-43" y="339"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bitofwood" width="320" height="568"/>
+    </resources>
+</document>

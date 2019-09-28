@@ -20,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var userInfo = UserInfo()
+
+    //    var userBet : CareerBetting
+    
+    
+    //When Parse is linked up this will find Parse object, but for now it will be created from scratch each time.
+ //   var userBet = UserBetInfo()
     
     
 //    enum SubscriptionType: Int {
@@ -37,12 +43,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
- 
+      //  let userBet = CareerBetting()
+        //game.userBet = userBet
+
        /// TAKE THIS OOT!!
         game.currentSubscriber = true
         print("AppDel: Hi me!")
         var myflag : Int = 0
-        
+
+        print("AD: at this point there lives something called \(CareerBetting.sharedCareer.start)")
+        let currentSession = SessionBetting()
+
         SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
 
             myflag += 1
@@ -102,7 +113,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         query.whereKey("uuid", equalTo: uuid!)
         //   query.whereKey("uuid", equalTo: "A0DC5487-7FAB-4602-B61F-B48EACBE45BA")
    //     userInfo = UserInfo()
-
         query.getFirstObjectInBackground( block: { (loadedObject, error) -> Void in
             
             if error != nil {

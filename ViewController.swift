@@ -14,7 +14,7 @@ import SwiftyStoreKit
 //public class Game
 
 
-public var game = Game()
+public var game = Game() 
 
 //////////////////////////////////////
 /*
@@ -56,6 +56,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         print("Fave: This is View DID APPPEEEEAAAAAH")
         if !game.initialAnimationPlayed {
             animateDealtCards()
+            game.vcHandle = self
+
         }
         if game.state == "loadingFavourite" {
             outletShuffle.setTitle("Deal", for: UIControlState.normal)
@@ -124,7 +126,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     }
     
     
-    @IBOutlet weak var starterLabel: UILabel!
+//    @IBOutlet weak var starterLabel: UILabel!
     
     
 //    public var activeCards: [DisplayedCard] = []
@@ -171,29 +173,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             print("Error initialising new Realm \(error)")
         }
         
- /*       if let faves = UserDefaults.standard.object(forKey: "favourites") as? [[Card]] {
-            print("Faves: was able to Get stored data")
-            
-            var storedData = faves
-            let count = faves.count
-            let newEntryHand = game.winningHand
-            let newEntryTime = dateString + " " + timeString
 
-            storedData.append(favDeck)
-            UserDefaults.standard.set(storedData, forKey: "favourites")
-            print("vc faves = \(faves)")
-            
-        } else {
-            let concatTime = dateString + timeString
- //           let storedData = [(game.winningHand, concatTime)]
-            let storedData = [favDeck]
-
-            print("Faves: prepping to write first UD record: \(game.winningHand), \(concatTime), \(storedData)")
-
-           UserDefaults.standard.set(storedData, forKey: "favourites")
-           print("Faves: was NOT able to Get stored data")
-            
-        } */
     }
     
     @IBOutlet weak var outletAddToFavourites: UIButton!
@@ -204,37 +184,20 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         transitioningDelegate = transitionDelegate
         ovc.transitioningDelegate = transitionDelegate
         ovc.modalPresentationStyle = .custom
-   //     ovc.preferredContentSize = CGSize(200, 100)
-     //   ovc.modalTransitionStyle = .flipHorizontal
+
         let hand = allPlayers[0].playerHand
         self.present(ovc, animated: true, completion: nil)
         ovc.handItem = hand
         
         
-     /*   let ovc = OddsViewController(nibName: "OddsViewController", bundle: nil)
-        ovc.modalPresentationStyle = .popover
-     //   ovc.modalTransitionStyle = .flipHorizontal
-        ovc.preferredContentSize = .init(width: 20, height: 20)
- 
-        self.present(ovc, animated:  true, completion: nil)
-        if let pop = ovc.popoverPresentationController {
-            let v = sender as! UIView
-            pop.sourceView = v
-            pop.sourceRect = v.bounds
-        } */
-        
-        
-      /*  let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.addSubview(blurEffectView)
-        tv.alpha = 1 */
+
 
     }
     
     @IBAction func buttonHitMe(_ sender: UIButton) {
         hitMe()
+        game.bookieBoard.setOdds()
+
     }
     
     let handOrder = ["High Card", "Pair", "Two Pair", "Trips", "Straight", "Flush", "Full House", "Poker", "Straight Flush", "Royal Flush"]
@@ -370,7 +333,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         let adjOptX = Int(wide / 60) // 5
         let adjOptY = Int(Double(high) / 3.3) //200
         let adjActX = 0
-        let adjActY = Int(high / 22) //20
+        let adjActY = Int(high / 25) ///22
         let adjCardX = -Int(wide / 7) // - 50
         let adjCardY = Int(high / 4) // 120
         var counter : Int = 0
@@ -381,13 +344,14 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             let l : UILabel = UILabel() // the l label holds the Player's Name
             counter += 1
             l.frame = CGRect(x: Int(a.x), y: Int(a.y), width: wide/2, height: 60)
-            l.textColor = UIColor.white
+            l.textColor = UIColor.black
             l.textAlignment = NSTextAlignment.left
         //    l.text = "Player \(counter)"
             l.text = game.playerNames[counter - 1]
             self.view.addSubview(l)
             playerLabels.append(l)
             
+            /* removing screen option
             let o : UILabel =    UILabel() // Label o holds the 3 options: best, worst, most likely
             o.frame = CGRect(x: Int(a.x) + adjOptX, y: Int(a.y) + adjOptY, width: wide/2, height: 50)
           //  o.backgroundColor = UIColor.orange
@@ -401,10 +365,12 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
            // self.view.sendSubview(toBack: o)
             playerLabels.append(o)
             game.mainScreenOddsLabels.append(o)
+            */
+            
             let act : UILabel = UILabel()  // label act holds the actual hand at that point in time
             act.frame = CGRect(x: Int(a.x) + adjActX, y: Int(a.y) + adjActY, width: wide/2, height: 50)
          //   act.backgroundColor = UIColor.purple
-            act.textColor = UIColor.white
+            act.textColor = UIColor.clear
             act.alpha = 1
             act.textAlignment = NSTextAlignment.left
             act.text = "actual stuff"
@@ -416,7 +382,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             let b : UILabel = UILabel() // label b holds the best hand and is displayed at the end
             b.frame = CGRect(x: Int(a.x) + adjActX, y: Int(a.y) + adjActY, width: wide/2, height: 28)
       //      b.backgroundColor = UIColor.cyan
-            b.textColor = UIColor.white
+            b.textColor = UIColor.blue
             b.textAlignment = NSTextAlignment.left
             b.font = UIFont(name: "Rockwell", size: game.chosenFontSize + 4)
             b.text = "Bestest stuff"
@@ -431,6 +397,26 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         print(allLabels[0][1].text)
      //   game.mainScreenLabels = allLabels
         return allLabels
+    }
+    
+    public func goldDisc(x: CGFloat, y: CGFloat, player: Int, winnings: Int) -> UITextField {
+        let gd = UITextField(frame: CGRect(x: -100, y: 200, width: 16, height: 16))
+        gd.backgroundColor = .yellow
+        gd.layer.cornerRadius = 8
+        gd.text = "€"//game.chosenCurrency
+        gd.textColor = .blue
+        gd.textAlignment = NSTextAlignment.center
+        gd.font = UIFont(name: game.bodyFont, size: 10)
+        UIView.animate(withDuration: 1) {
+            
+            gd.frame = CGRect(x: 0, y: 0, width: gd.frame.width * 2, height: gd.frame.height * 2)
+            gd.layer.cornerRadius = 16
+            gd.center = game.playingScreenObjects[player][0].center
+            gd.text = game.chosenCurrency + String(winnings)
+            
+            
+        }
+        return gd
     }
     
     public func moveScreenObjectsToPortrait(anchors: [CGPoint]) {
@@ -574,35 +560,36 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             wide = Double(game.landscapeWidth)
             high = Double(game.landscapeHeight)
         }
+        game.centralFinish = CGPoint(x: wide * 0.4, y: high * 0.5)
         switch game.players {
         case 2:
-            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.1))
-            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.5))
+            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.4))
+            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.63))
         case 3:
-            playerAnchors.append(CGPoint(x: wide * 0.2, y: high * 0.15))
-            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.15))
-            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.5))
+            playerAnchors.append(CGPoint(x: wide * 0.2, y: high * 0.4))
+            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.4))
+            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.63))
 
         case 4:
-            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.1))
-            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.1))
-            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.5))
-            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.5))
+            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.4))
+            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.4))
+            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.63))
+            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.63))
 
         case 5:
-            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.1))
-            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.05))
-            playerAnchors.append(CGPoint(x: wide * 0.7, y: high * 0.1))
-            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.5))
-            playerAnchors.append(CGPoint(x: wide * 0.2, y: high * 0.5))
+            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.12))
+            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.07))
+            playerAnchors.append(CGPoint(x: wide * 0.7, y: high * 0.12))
+            playerAnchors.append(CGPoint(x: wide * 0.6, y: high * 0.63))
+            playerAnchors.append(CGPoint(x: wide * 0.2, y: high * 0.63))
 
         case 6:
-            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.1))
-            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.05))
-            playerAnchors.append(CGPoint(x: wide * 0.7, y: high * 0.1))
-            playerAnchors.append(CGPoint(x: wide * 0.7, y: high * 0.45))
-            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.55))
-            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.45))
+            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.12))
+            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.07))
+            playerAnchors.append(CGPoint(x: wide * 0.7, y: high * 0.12))
+            playerAnchors.append(CGPoint(x: wide * 0.7, y: high * 0.4))
+            playerAnchors.append(CGPoint(x: wide * 0.4, y: high * 0.63))
+            playerAnchors.append(CGPoint(x: wide * 0.1, y: high * 0.4))
 
         default:
             print("wrong number of players")
@@ -624,7 +611,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     @IBOutlet weak var ace: UIImageView!
     
     @IBOutlet weak var title1: UILabel!
-    @IBOutlet weak var title2: UILabel!
+  //  @IBOutlet weak var title2: UILabel!
     
 //    public func createFiveImages() {
 //        for cIM in cardArray {
@@ -667,24 +654,20 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     
     var starterAlreadyShown = false
 
-    
+   // @IBOutlet weak var bookiesBoard: UIView!
+  // initially this will be set to 1, there is only 1 session per session, but in future the no of sessions will be retrieved from the DB and incremented
+
     override public func viewDidLoad() {
         super.viewDidLoad()
         var iPadMultiplier = 1.0
-        if game.turnOrange {
-            starterLabel.textColor = .orange
-            
-        }
 
-    //    print("Dimensions of this screen: Height \(self.view.bounds.height), Width \(self.view.bounds.width)... \(UIDevice).self.self")
+        // will need to store a UniqueSessionRef value in the Parse DB
+     //   game.currentSessionBet = CareerBetting.sharedCareer.currentSession
+   //     let sessionBetInfo = SessionBetting()
+
+
+
         
-//        if !starterAlreadyShown {
-//            UIView.animate(withDuration: 2) {
-//                self.starterLabel.text = self.starterLabel.text! + "\n\nSwipe Right to reveal the menu or press Shuffle and Deal to start a new game."
-//                self.starterLabel.alpha = 1
-//                self.starterAlreadyShown = true
-//            }
-//        }
         let hideOddsOnScreenObject = UserDefaults.standard.object(forKey: "mainScreenOddsHidden")
         if let hideOddsOnMainScreen = hideOddsOnScreenObject as? Bool {
             game.mainScreenOddsHidden = hideOddsOnMainScreen
@@ -1003,6 +986,10 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             iPadMultiplier = 2.0
 
         }
+    //    bookiesBoard.clipsToBounds = true
+        
+  //      bookiesBoard.layer.cornerRadius = 5.0
+        
         outletHitMe.alpha = 0
         outletAddToFavourites.alpha = 0
         outletAddToFavourites.layer.cornerRadius = 5.0
@@ -1032,12 +1019,15 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             reloadedBanner.alpha = 0
         }
         clearUp()
-
+        game.bookieBoard.goldDisc(x: outletShuffle.frame.maxX, y: outletShuffle.frame.maxY)
+        
+ //       bookiesBoard.alpha = 1
+        
 //        if starterLabel.alpha == 1 {
             UIView.animate(withDuration: 1) {
-                self.starterLabel.alpha = 0
+   //             self.starterLabel.alpha = 0
                 self.title1.alpha = 0
-                self.title2.alpha = 0
+   //             self.title2.alpha = 0
                 self.ten.alpha = 0
                 self.jack.alpha = 0
                 self.queen.alpha = 0
@@ -1073,12 +1063,39 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
  
         } 
         print("Fave: in Shuffle&Deal()2 - 9th card is \(game.myDeckOfCards.deck[8].getOrder)")
+        game.gameNo += 1
+        print("UB: instantiating GameBetting. GameNo = \(game.gameNo)")
+        let gameBet = GameBetting()
 
         for i in 1 ... 3 {
             hitMe()
         }
         print("Fave: in Shuffle&Deal()3 - 9th card is \(game.myDeckOfCards.deck[8].getOrder)")
+        if let bookieBoard = Bundle.main.loadNibNamed("BookieStall", owner: self, options: nil)?.first as? BookieView {
+            self.view.addSubview(bookieBoard)
+            let bbx = self.view.bounds.width / 2
+            let bby = self.view.bounds.height / 4
+            bookieBoard.center = CGPoint(x: bbx, y: bby)
+            bookieBoard.clipsToBounds = true
+            bookieBoard.layer.cornerRadius = 10.0
+            bookieBoard.layer.borderWidth = 2.0
+            
+            bookieBoard.layer.borderColor = UIColor.black.cgColor
+            game.bookieBoard = bookieBoard
+        //    game.bookieBoard.setPlayers()
+          //  game.bookieBoard.setOdds()
+            
 
+            //   CareerBetting.sharedCareer.currentSession?.currentGame = gameBet
+            
+            
+            /*          if let myBet = UserBet() {
+             print("MyBet is \(myBet)")
+             }
+             */
+        }
+    
+        let wibble = game.bookieBoard.p1Odds.text
     }
     
  //   func getImage(key: String) {
@@ -1091,6 +1108,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         for i in activeCards {
             i.screenCard.removeFromSuperview()
         }
+//        game.bookieBoard.removeFromSuperview() moved to animatecompletion
+        
   /* 220418
          p1Best.text = ""
         p1ActualHand.text = ""
@@ -1122,7 +1141,10 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         p4ActualHand.alpha = 1
  */
         for o in game.playingScreenObjects {
-            for i in 0 ... 3 {
+            /// remove options label
+            for i in 0 ... 2 {
+         ///       for i in 0 ... 3 {
+
                 o[i].removeFromSuperview()
             }
         }
@@ -1209,6 +1231,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         // 8. repeat stages 6 and 7
         // never did do 6-8 above
         print("in animateCompletion")
+        game.bookieBoard.removeFromSuperview()
+
         var allHandValsdict = [Int : Int]()
         var allHandVals = [Int]()
      ///   var indexVals = [Int]()
@@ -1236,16 +1260,18 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 if p[0].text == game.playerNames[winningPlayer] {
                     p[0].font = UIFont(name: "Calibri", size: 22)
                     p[0].textColor = UIColor.black
-                    p[0].center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height * 0.1)
+                    p[0].center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height * 0.35) // centralFinish??
                     p[0].textAlignment = .center
-                    p[3].alpha = 1
+                    ///    removing options label
+                    
+      /*              p[3].alpha = 1
                     p[3].textAlignment = .center
                     p[3].center = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height * 0.15)
                     p[3].font = UIFont(name: "Calibri", size: 12)
-                    p[3].textColor = UIColor.black
+                    p[3].textColor = UIColor.black */
                 } else {
                     p[0].alpha = 0
-                    p[3].alpha = 0
+                /*    p[3].alpha = 0 */
                 }
             }
             print("Hitme: begin iterating through activeCards")
@@ -1256,7 +1282,9 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                 } else {
                   //  a.revealCard()
                  //   a.screenCard.alpha = 0
-                    a.screenCard.center = CGPoint(x: self.view.bounds.width * 0.4, y: self.view.bounds.height * 0.3)
+                    a.screenCard.center = game.centralFinish
+                        
+                        // old centre finish point  CGPoint(x: self.view.bounds.width * 0.4, y: self.view.bounds.height * 0.3)
           
                     for c in self.allPlayers[winningPlayer].playerHand.myFive {
                         print(" Winning Player is player: \(winningPlayer)")
@@ -1348,7 +1376,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         } else {
           //  game.state remains underway
             for p in 0...game.players - 1 {
-                print("testing hitme <=6 \(String(describing: game.playingScreenObjects[p][0].text))")
+                print("UB: testing hitme <=6 \(String(describing: game.playingScreenObjects[p][0].text))")
 
                 if nextCard > 6 {
                     for l in game.playingScreenObjects {
@@ -1356,13 +1384,25 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
                         l[2].alpha = 0
                       //  l[3].alpha = 1
                     }
+                    print("UB: StreetBetting Initialised. Street \(nextCard), player \(p)")
+                    let streetBet = StreetBetting(street: nextCard, player: p)
                 } else {
                     for l in game.playingScreenObjects {
 
-                    l[1].alpha = 1
-                    l[2].alpha = 1
-                    l[3].alpha = 0
+                        l[1].alpha = 1
+                        l[2].alpha = 1
+
+                //        game.currentStreetBet = streetBet
+                        // removing screen option
+                  //  l[3].alpha = 0
                     }
+                    print("UB: Ready to loop StreetBet \(nextCard), player \(p)")
+
+                    if nextCard >= 3 {
+                        print("UB: StreetBetting Initialised. Street \(nextCard), player \(p)")
+                        let streetBet = StreetBetting(street: nextCard, player: p)
+                    }
+
                 }
             }
         
@@ -1383,7 +1423,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
 
 
                 game.playingScreenObjects[i-1][2].text = hand.currentActualHandString
-                game.playingScreenObjects[i-1][3].text = hand.bestHandString
+                // removing screen option
+             //   game.playingScreenObjects[i-1][3].text = hand.bestHandString
        //         print("cah: Hand \(hand.uniqueHandRef). hitme2. NextCard = \(nextCard). outputstring: \(game.playingScreenObjects[i-1][2].text!)")
                 let order = card.getOrder
                 playerCard(player: i, cardno: nextCard, frontImage: info1, order: order)
@@ -1465,8 +1506,11 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             for l in game.playingScreenObjects {
                 UIView.animate(withDuration: 1) {
                     l[1].alpha = 0
-                    l[2].text = l[3].text
-    /****/                l[3].alpha = 0
+                    /// removing screen option
+                    ///
+           ///         l[2].text = l[3].text
+                   l[2].alpha = 0
+          ///          l[3].alpha = 0
                     
                 }
                 print("Imbecile")
@@ -1504,7 +1548,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         wibbleTwit.highCard = hand.odds.highOdds[i - 3]
         wibbleTwit.totalOdds = wibbleTwit.straightFlush + wibbleTwit.poker + wibbleTwit.fullHouse + wibbleTwit.flush + wibbleTwit.straight + wibbleTwit.trips + wibbleTwit.twoPair + wibbleTwit.pair + wibbleTwit.highCard
         do {
-            let realmO = try Realm()
+ /***/       let realmO = try Realm()
             try realmO.write {
                 realmO.add(wibbleTwit)
                 let res1 : Int = realmO.objects(Outcome.self).sum(ofProperty: "card") //as! [Double]
@@ -1624,32 +1668,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         let totpc : Double = h.odds.strafluOdds[index] + h.odds.pokerOdds[index] + h.odds.fhOdds[index] + h.odds.flushOdds[index] + h.odds.runOdds[index] + h.odds.tripsOdds[index] + h.odds.twopairOdds[index] + h.odds.pairOdds[index] + h.odds.highOdds[index]
   
         
-/*
-        
-        print("Adjusted Odds for 0: \(String(format: "%.f", 100 * h.handProb["straightFlush"]!))")
-        print("Adjusted Odds for 1: \(String(format: "%.f", 100 * h.handProb["poker"]!))")
-        print("Adjusted Odds for 2: \(String(format: "%.f",100 * h.handProb["house"]!))")
-        print("Adjusted Odds for 3: \(String(format: "%.f",100 * h.handProb["flush"]!))")
-        print("Adjusted Odds for 4: \(String(format: "%.f",100 * h.handProb["straight"]!))")
-        print("Adjusted Odds for 5: \(String(format: "%.f",100 * h.handProb["trips"]!))")
-        print("Adjusted Odds for 6: \(String(format: "%.f",100 * h.handProb["twoPair"]!))")
-        print("Adjusted Odds for 7: \(String(format: "%.f",100 * h.handProb["pair"]!))")
-        print("Adjusted Odds for 8: \(String(format: "%.f",100 * h.handProb["highCard"]!))") */
-        
-    /*
-        do {
-            let fm = FileManager()
-            let docsurl = try fm.url(for: .cachesDirectory, in: .userDomainMask , appropriateFor: nil, create: true)
-            let arr = try fm.contentsOfDirectory(at: docsurl, includingPropertiesForKeys: nil, options: [])
-            arr.forEach{ print("Contents of cache directory \($0.lastPathComponent)")}
-        } catch {
-            print("error caught")
-        }
-      */
-      //  let outfileURL = Bundle.main.path(forResource: "Deckout", ofType: "csv")
-     /*   let fileName = "Deckout1"
-        let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-       */
+
         
         saveOutcomePrivate(hand: h)
         // the following compiles but seems to overwrite the file afresh on each write
@@ -1928,6 +1947,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         var wide = Int()
         var high = Int()
         cardImage = UIImageView(frame: CGRect(x: xAnchor, y: yAnchor, width: CGFloat(game.cardwidth), height: CGFloat(game.cardHeight)))
+        cardImage.clipsToBounds = true
+        cardImage.layer.cornerRadius = 5.0
         game.visibleCards.append(cardImage)
         if cardno < 3 || cardno == 7 {
             up = false
@@ -1954,7 +1975,14 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     
         cardImage.center = CGPoint(x: 0, y: high / 2)
       //  let adjCardX = -wide / 7 // - 50
-        let adjCardY = Double(high) / 4.5 // was 4.3
+        let adjCardY = Double(high) / 5.8 // was 4.3
+
+  ///  18/07/19    let adjCardY = Double(high) / 4.5 // was 4.3
+   /*     var adjCardY = Double(high) / 4.5 // was 4.3
+
+        if player == 1 {
+            adjCardY = Double(high) / 4.0
+        } */
         var fan : CGFloat = 0
         if cardno > 1 {
             fan = CGFloat(cardno - 1) * 0.25
@@ -2169,6 +2197,8 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
     }
 
     @IBAction func zap(_ sender: Any) {
+  //      game.bookieBoard.removeFromSuperview()
+        game.bookieBoard.alpha = 0
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let lvc = sb.instantiateViewController(withIdentifier: "Overlay2") as! LeadersViewController
         transitioningDelegate = transitionDelegate
@@ -2199,59 +2229,10 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
             moveScreenObjectsToPortrait(anchors: anchorsP)
         }
     }
-    
-    
-    @IBOutlet weak var p1Name: UILabel!
-    
-    
-    @IBOutlet weak var p1Odds: UILabel!
-    
-    
-    
-    @IBAction func p1Stake(_ sender: Any) {
-        print("Wibble")
-        
-    }
-    
-    
-    @IBOutlet weak var p2Player: UILabel!
-    
-    @IBOutlet weak var p2Odds: UILabel!
-    
-    @IBAction func p2Stake(_ sender: Any) {
-    }
-    
-    @IBOutlet weak var p3Player: UILabel!
-    
-    
-    @IBOutlet weak var p3Odds: UILabel!
-    
-    @IBAction func p3Stake(_ sender: Any) {
-    }
-    
-    @IBOutlet weak var p4Player: UILabel!
-    
-    @IBOutlet weak var p4Odds: UILabel!
-    
-    @IBAction func p4Stake(_ sender: Any) {
-    }
-    
-    @IBOutlet weak var p5Player: UILabel!
-    
-    @IBOutlet weak var p5Odds: UILabel!
-    
-    @IBAction func p5Stake(_ sender: Any) {
-    }
-    
-    @IBOutlet weak var p6Player: UILabel!
-    
-    @IBOutlet weak var p6Odds: UILabel!
-    
-    @IBAction func p6Stake(_ sender: Any) {
-    }
+
     
     public func populateBookieBoard() {
-        var oddsDefault = "5/1"
+  /*      var oddsDefault = "5/1"
  
         print("PBB: All. \(game.playerNames)")
         switch game.street {
@@ -2347,7 +2328,7 @@ public  class ViewController: UIViewController, SideMenuDelegate,  UIGestureReco
         
 
  
-        
+      */
         
     }
     
